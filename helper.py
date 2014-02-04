@@ -30,22 +30,22 @@ def g(i,y_1,y,X,W):
         ret += W[j] * f(j,y_1,y,X,i) 
     return ret
 
-def g_vector(i,y,X,W, method): #g customised for alpha,beta calculation
+def g_vector(i,v,X,W, method): #g customised for alpha,beta calculation
     ret = np.zeros(m+2,dtype=float)
     if(method == "alpha"):		
-        for x in range(m+2):
-            ret[x] = g(j,x,y,X,W) 
+        for u in range(m+2):
+            ret[u] = g(i,u,v,X,W) 
     elif(method=="beta"):
-        for x in range(m+2):
-            ret[x] = g(j,y,x,X,W)
+        for u in range(m+2):
+            ret[u] = g(i,v,u,X,W)
     return ret
 
 def alpha(X,W):
 	a = np.zeros((n+1,m+2),dtype=float)
 	a[0,0]=1.0
-	for k in range(0,n):
-		for v in range(0,m):
-			a[k+1,v] = np.dot(alpha[k,:], np.exp(g_vector(k,v,X,W,"alpha")))
+	for k in range(n):
+		for v in range(m+2):
+			a[k+1,v] = np.dot(alpha[k,:], np.exp(g_vector(k+1,v,X,W,"alpha")))
 	return a
 
 def beta(X,W):
