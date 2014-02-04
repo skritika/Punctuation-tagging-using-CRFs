@@ -49,10 +49,10 @@ def alpha(X,W):
 	return a
 
 def beta(X,W):
-    b = np.zeros((m+2,n+1),dtype=float)
-    b[m+1,n] = 1.0
-    for k in range(n-1,0,-1):
-        for u in range(0,m+2):
+    b = np.zeros((m+2,n+2),dtype=float)
+    b[m+1,n+1] = 1.0
+    for k in range(n,0,-1):
+        for u in range(m+2):
             b[u,k] = np.dot(b[:,k+1], np.exp(g_vector(k+1,u,X,W,"beta")))
     return b
 
