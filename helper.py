@@ -71,10 +71,10 @@ def expectation_F(j,X,Y):
 	a = alpha(X,W)
 	b = beta(X,W)
 	z = sum(a[n,:])
-	for i in range(0,n):
-		for l in range(0,m+2):
+	for i in range(1,n+1):
+		for l in range(0,m+1):
 			for k in range(1,m+2):
-			    val = val + f(j,l,k,X,i)*(a(i-1,l)*np.exp(g(i,l,k,X,W))* b[k,i])/z
+			    val += f(j,l,k,X,i)*(a(i-1,l)*np.exp(g(i,l,k,X,W))* b[k,i])/z
 	return val
 
 def t2i (tag): #tag to int
