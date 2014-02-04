@@ -1,4 +1,5 @@
 import nltk.tag
+from feature_functions import *
 global J,m
 J = 5 # no. of feature function used
 m = 6 # assume 0th tag = START, (m+1)th tag = STOP
@@ -17,10 +18,11 @@ def POS(sentence):
     return tags
 
 def F(j, X, Y, W):
-    return 0
-
-def f(j,y_1,y,X,i):
-    return 0
+	n = len(X)
+	ret = 0.0
+	for i in range(1,n+1):
+		ret += f(j,Y[i-1],Y[i],X,i)
+	return ret
 
 def g(i,y_1,y,X,W):
     ret = 0.0
@@ -28,14 +30,14 @@ def g(i,y_1,y,X,W):
         ret += W[j] * f(j,y_1,y,X,i) 
     return ret
 
-def g_vector(i,y,X,W, method): #g customised for alpha,bet calculation
+def g_vector(i,y,X,W, method): #g customised for alpha,beta calculation
     ret = np.zeros(m+2,dtype=float)
     if(method == "alpha"):		
         for x in range(m+2):
             ret[x] = g(j,x,y,X,W) 
     elif(method=="beta"):
         for x in range(m+2):
-            ret[x] = g(j,y,x,X,W) 
+            ret[x] = g(j,y,x,X,W)
     return ret
 
 def alpha(X,W):
@@ -61,7 +63,7 @@ def Z(X,W,method):
 		return sum(a[n,:])
 	elif(method=="beta") :
 		b = beta(X,W)
-	return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,0])
+		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,0])
 	
 def expectation_F(j,X,Y):
 	n = len(X)
@@ -73,4 +75,26 @@ def expectation_F(j,X,Y):
 		for l in range(0,m+2):
 			for k in range(1,m+2):
 			    val = val + f(j,l,k,X,i)*(a(i-1,l)*np.exp(g(i,l,k,X,W))* b[k,i])/z
-    return val
+	return val
+
+def t2i (tag): #tag to int
+	if(tag=="START"): return 0
+	elif(tag=="COMMA"): return 1
+	elif(tag=="PERIOD"): return 2
+	elif(tag=="QUESTION_MARK"): return 3
+	elif(tag=="EXCLAMATION_POINT"): return 4
+	elif(tag=="COLON"): return 5
+	elif(tag=="SPACE"): return 6
+	elif(tag=="STOP"): return 7
+	else: return -1
+
+def i2t (val): # int to tag
+	if(val==0): return "START"
+	elif(val==1): return "COMMA"
+	elif(val==2): return "PERIOD"
+	elif(val==3): return "QUESTION_MARK"
+	elif(val==4): return "EXCLAMATION_POINT"
+	elif(val==5): return "COLON"
+	elif(val==6): return "SPACE"
+	elif(val==7): return "STOP"
+	else: return ""
