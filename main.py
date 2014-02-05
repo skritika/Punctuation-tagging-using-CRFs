@@ -24,15 +24,16 @@ def train(train_data, train_labels):
 		print POS(train_data[i]) 
 		print l
 		'''
-	X = train_data[0].split()
-	W = np.ones(J,dtype='float')
-	print Z(X,W,"alpha")
-	print Z(X,W,"beta")
-	num_epochs = 5
+	num_epochs = 2
 	iterations = 0
 	lamda = 0.05
+	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		W = W + lamda * single_grad(X,Y,W)	
+		for i in range(len(train_data)):
+			X = train_data[0].split()
+			Y = y2int(train_labels[0].split())
+			W = W + lamda * single_grad(X,Y,W)
+			print i
 	return W
 
 def test(test_data, test_labels):

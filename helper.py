@@ -17,12 +17,15 @@ def POS(sentence):
         tags.append(each[1])
     return tags
 
-def F(j, X, Y, W):
+def F(X, Y, W):
 	n = len(X)
-	ret = 0.0
-	for i in range(1,n+1):
-		ret += f(j,Y[i-1],Y[i],X,i)
-	return ret
+	F_vec = np.zeros(J, dtype=float)
+	for j in range(J):	
+		F_vec[j] += f(j,t2i('START'),Y[0],X,1)
+		for i in range(1,n):
+			F_vec += f(j,Y[i-1],Y[i],X,i+1)
+		F_vec[j] += f(j,Y[n-1],t2i('STOP'),X,n+1)
+	return F_vec
 
 def g(i,y_1,y,X,W):
     ret = 0.0
@@ -67,23 +70,21 @@ def Z(X,W,method):
 		b = beta(X,W)
 		return np.dot(np.exp(g_vector(1,0,X,W,"beta")), b[:,1])
 	
-def expectation_F(j,W,X):
+def expectation_F(X,W):
+	F = np.zeros(J, dtype=float)
 	n = len(X)
-	val = 0.0
 	a = alpha(X,W)
 	b = beta(X,W)
-	z = sum(a[n,:])
-	for i in range(0,n):
-		for l in range(0,m+2):
-			for k in range(1,m+2):
-			    val = val + f(j,l,k,X,i)*(a(i-1,l)*np.exp(g(i,l,k,X,W))* b[k,i])/z
-	return val
-
-def single_grad(j,X,W,Y):
-	ret = np.empty(J,dtype=float)
+	z = sum(a[-1,:])
 	for j in range(J):
-		ret[j] =  (F(j, X, Y, W) - expectation_F(j,W,X))
-	return ret
+		for i in range(1,n+1):
+			for l in range(0,m+1):
+				for k in range(1,m+2):
+					F[j] = F[j] + f(j,l,k,X,i)*(a[i-1,l]*np.exp(g(i,l,k,X,W))* b[k,i])
+	return F/z
+
+def single_grad(X,Y,W):
+	return (F(X, Y, W) - expectation_F(X,W))
 
 def decode(X,W):
 	n = len(X)
