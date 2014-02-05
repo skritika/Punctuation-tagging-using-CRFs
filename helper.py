@@ -1,8 +1,6 @@
 import nltk.tag
-import numpy as np
 from feature_functions import *
-global J,m
-J = 5 # no. of feature function used
+global m
 m = 6 # assume 0th tag = START, (m+1)th tag = STOP
 
 def load_data(file_path):
@@ -42,21 +40,19 @@ def g_vector(i,v,X,W, method): #g customised for alpha,beta calculation
     return ret
 
 def alpha(X,W):
-	n = len(X)
 	a = np.zeros((n+1,m+2),dtype=float)
 	a[0,0]=1.0
 	for k in range(n):
 		for v in range(m+2):
-			a[k+1,v] = np.dot(a[k,:], np.exp(g_vector(k+1,v,X,W,"alpha")))
+			a[k+1,v] = np.dot(alpha[k,:], np.exp(g_vector(k+1,v,X,W,"alpha")))
 	return a
 
 def beta(X,W):
-    n = len(X)
-    b = np.zeros((m+2,n+2),dtype=float)
-    b[m+1,n+1] = 1.0
-    for k in range(n,0,-1):
-        for u in range(m+2):
-            b[u,k] = np.dot(b[:,k+1].T, np.exp(g_vector(k+1,u,X,W,"beta")))
+    b = np.zeros((m+2,n+1),dtype=float)
+    b[m+1,n] = 1.0
+    for k in range(n-1,0,-1):
+        for u in range(0,m+2):
+            b[u,k] = np.dot(b[:,k+1], np.exp(g_vector(k+1,u,X,W,"beta")))
     return b
 
 def Z(X,W,method):
@@ -66,7 +62,7 @@ def Z(X,W,method):
 		return sum(a[n,:])
 	elif(method=="beta") :
 		b = beta(X,W)
-		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,1])
+		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,0])
 	
 def expectation_F(j,W,X):
 	n = len(X)
@@ -104,5 +100,24 @@ def decode(X,W):
 		y_hat[i] = np.argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
 	return y_hat
 
-def y2int(Y):
-	tags = np.empty(len(Y), dtype=)
+def t2i (tag): #tag to int
+	if(tag=="START"): return 0
+	elif(tag=="COMMA"): return 1
+	elif(tag=="PERIOD"): return 2
+	elif(tag=="QUESTION_MARK"): return 3
+	elif(tag=="EXCLAMATION_POINT"): return 4
+	elif(tag=="COLON"): return 5
+	elif(tag=="SPACE"): return 6
+	elif(tag=="STOP"): return 7
+	else: return -1
+
+def i2t (val): # int to tag
+	if(val==0): return "START"
+	elif(val==1): return "COMMA"
+	elif(val==2): return "PERIOD"
+	elif(val==3): return "QUESTION_MARK"
+	elif(val==4): return "EXCLAMATION_POINT"
+	elif(val==5): return "COLON"
+	elif(val==6): return "SPACE"
+	elif(val==7): return "STOP"
+	else: return ""

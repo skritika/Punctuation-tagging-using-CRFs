@@ -7,9 +7,10 @@
 Using POS
 '''
 
-global num_a, num_b
+global num_a, num_b, j
 num_a = 19
 num_b = 6
+j = num_a*num_b
 
 def f(j, yi_1, yi, x, i):
 	#j = bi + (ai-1)*num_a
@@ -19,22 +20,23 @@ def f(j, yi_1, yi, x, i):
 
 def b(n, yi_1, yi, i):
 	if(n==1):
-		return int(yi_1=='COMMA')
+		return int(yi_1==t2i('COMMA'))
 	elif(n==2):
-		return int(yi_1=='COMMA' and yi=='COMMA')
+		return int(yi_1==t2i('COMMA') and yi==t2i('COMMA'))
 	elif(n==3):
-		return int(yi_1=='PERIOD' and yi=='STOP')
+		return int(yi_1==t2i('PERIOD') and yi==t2i('STOP'))
 	elif(n==4):
-		return int(yi_1=='EXCLAMATION_POINT' and yi=='STOP')
+		return int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
 	elif(n==5):
-		return int(yi_1=='QUESTION_MARK' and yi=='STOP')
+		return int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
 	elif(n==6):
-		return int(yi_1=='START' and yi=='COMMA')
+		return int(yi_1==t2i('START') and yi==t2i('COMMA'))
 	else:
 		print 'err! wrong n'
 	
 def a(n, x, i):
 	length = len(x)
+	i = i - 1
 	if(n==1):
 		return int(x[i].lower()=='and')
 	elif(n==2):
@@ -77,7 +79,7 @@ def a(n, x, i):
 		print 'err! wrong n'
 
 
-def t2i (tag): #tag to int
+def t2i(tag): #tag to int
 	if(tag=="START"): return 0
 	elif(tag=="COMMA"): return 1
 	elif(tag=="PERIOD"): return 2
@@ -88,7 +90,7 @@ def t2i (tag): #tag to int
 	elif(tag=="STOP"): return 7
 	else: return -1
 
-def i2t (val): # int to tag
+def i2t(val): # int to tag
 	if(val==0): return "START"
 	elif(val==1): return "COMMA"
 	elif(val==2): return "PERIOD"
