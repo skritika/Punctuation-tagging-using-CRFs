@@ -24,7 +24,12 @@ def train(train_data, train_labels):
 		print POS(train_data[i]) 
 		print l
 		'''
-	W = np.zeros(J,dtype='float')
+
+
+	X = train_data[0].split()
+	W = np.ones(J,dtype='float')
+	print Z(X,W,"alpha")
+	print Z(X,W,"beta")
 	num_epochs = 5
 	iterations = 0
 	lamda = 0.05

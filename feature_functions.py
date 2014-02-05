@@ -7,19 +7,29 @@
 Using POS
 '''
 
-def b(n, y, i):
+global num_a, num_b
+num_a = 19
+num_b = 6
+
+def f(j, yi_1, yi, x, i):
+	#j = bi + (ai-1)*num_a
+	bi = j%num_a
+	ai = (j-bi)/num_a + 1
+	return a(ai, x, i) and b(bi, yi_1, yi, i)
+
+def b(n, yi_1, yi, i):
 	if(n==1):
-		return int(y[i-1]=='COMMA')
+		return int(yi_1=='COMMA')
 	elif(n==2):
-		return int(y[i-1]=='COMMA' and y[i]=='COMMA')
+		return int(yi_1=='COMMA' and yi=='COMMA')
 	elif(n==3):
-		return int(y[i-1]=='PERIOD' and y[i]=='STOP')
+		return int(yi_1=='PERIOD' and yi=='STOP')
 	elif(n==4):
-		return int(y[i-1]=='EXCLAMATION_POINT' and y[i]=='STOP')
+		return int(yi_1=='EXCLAMATION_POINT' and yi=='STOP')
 	elif(n==5):
-		return int(y[i-1]=='QUESTION_MARK' and y[i]=='STOP')
+		return int(yi_1=='QUESTION_MARK' and yi=='STOP')
 	elif(n==6):
-		return int(y[i-1]=='START' and y[i]='COMMA')
+		return int(yi_1=='START' and yi=='COMMA')
 	else:
 		print 'err! wrong n'
 	
@@ -59,9 +69,32 @@ def a(n, x, i):
 		return int(x[i].lower()=='furthermore')
 	elif(n==17):
 		return int(x[i].lower()=='specifically')
-	elif(n==16):
+	elif(n==18):
 		return int(x[i].lower()=='likewise')
-	elif(n==16):
+	elif(n==19):
 		return int(x[i].lower()=='meanwhile')
 	else:
 		print 'err! wrong n'
+
+
+def t2i (tag): #tag to int
+	if(tag=="START"): return 0
+	elif(tag=="COMMA"): return 1
+	elif(tag=="PERIOD"): return 2
+	elif(tag=="QUESTION_MARK"): return 3
+	elif(tag=="EXCLAMATION_POINT"): return 4
+	elif(tag=="COLON"): return 5
+	elif(tag=="SPACE"): return 6
+	elif(tag=="STOP"): return 7
+	else: return -1
+
+def i2t (val): # int to tag
+	if(val==0): return "START"
+	elif(val==1): return "COMMA"
+	elif(val==2): return "PERIOD"
+	elif(val==3): return "QUESTION_MARK"
+	elif(val==4): return "EXCLAMATION_POINT"
+	elif(val==5): return "COLON"
+	elif(val==6): return "SPACE"
+	elif(val==7): return "STOP"
+	else: return ""
