@@ -1,3 +1,4 @@
+import numpy as np
 import nltk.tag
 from feature_functions import *
 global m
@@ -100,24 +101,3 @@ def decode(X,W):
 		y_hat[i] = np.argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
 	return y_hat
 
-def t2i (tag): #tag to int
-	if(tag=="START"): return 0
-	elif(tag=="COMMA"): return 1
-	elif(tag=="PERIOD"): return 2
-	elif(tag=="QUESTION_MARK"): return 3
-	elif(tag=="EXCLAMATION_POINT"): return 4
-	elif(tag=="COLON"): return 5
-	elif(tag=="SPACE"): return 6
-	elif(tag=="STOP"): return 7
-	else: return -1
-
-def i2t (val): # int to tag
-	if(val==0): return "START"
-	elif(val==1): return "COMMA"
-	elif(val==2): return "PERIOD"
-	elif(val==3): return "QUESTION_MARK"
-	elif(val==4): return "EXCLAMATION_POINT"
-	elif(val==5): return "COLON"
-	elif(val==6): return "SPACE"
-	elif(val==7): return "STOP"
-	else: return ""
