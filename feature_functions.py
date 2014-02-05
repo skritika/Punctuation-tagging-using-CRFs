@@ -1,4 +1,8 @@
 '''
+<<<<<<< HEAD
+=======
+convention_ucsd: i = 1 denotes the first element in X, to acces it use X[0] not X[1]
+>>>>>>> b2dccbedbe976f5d2c876a269ae2ede4e9c1763f
 1. The current word is 'and, but, yet, or, nor, for, so' and the previous tag is COMMA. 
 2. The current word is 'however, consequently, otherwise, moreover, nevertheless', the previous tag is COMMA and the current tag is COMMA.
 3. The previous tag is 'PERIOD/EXCLAMATION_POINT/QUESTION_MARK' and the current tag is STOP.
@@ -69,7 +73,7 @@ def a(n, x, i):
 
 	
 
-
+'''
 
 def f(j,y_1,y,X,i):
 	n = len(X)
