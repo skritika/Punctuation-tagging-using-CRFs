@@ -38,6 +38,8 @@ def b(n, yi_1, yi, i):
 	
 def a(n, x, i):
 	length = len(x)
+	if(i==len(x)+1):
+		return 0
 	i = i - 1
 	if(n==1):
 		return int(x[i].lower()=='and')
@@ -80,7 +82,7 @@ def a(n, x, i):
 	elif(n==20):
 		pos = POS(x[i])
 		return int(pos[0]=='NNP')
-	else	:
+	else	
 		print 'err! wrong n'
 
 def t2i(tag): #tag to int
