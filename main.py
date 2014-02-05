@@ -24,8 +24,6 @@ def train(train_data, train_labels):
 		print POS(train_data[i]) 
 		print l
 		'''
-
-
 	X = train_data[0].split()
 	W = np.ones(J,dtype='float')
 	print Z(X,W,"alpha")

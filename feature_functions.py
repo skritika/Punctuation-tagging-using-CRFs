@@ -10,7 +10,7 @@ Using POS
 global num_a, num_b, j
 num_a = 19
 num_b = 6
-j = num_a*num_b
+J = num_a*num_b
 
 def f(j, yi_1, yi, x, i):
 	#j = bi + (ai-1)*num_a
