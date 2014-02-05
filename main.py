@@ -29,11 +29,12 @@ def train(train_data, train_labels):
 	lamda = 0.05
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(len(train_data)):
+		for i in range(100):
 			X = train_data[0].split()
 			Y = y2int(train_labels[0].split())
 			W = W + lamda * collins_grad(X,Y,W)
 			print i
+		print W
 	return W
 
 def test(test_data, test_labels):

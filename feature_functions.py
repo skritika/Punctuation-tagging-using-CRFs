@@ -7,8 +7,8 @@
 Using POS
 '''
 
-global num_a, num_b, j
-num_a = 20
+global num_a, num_b, J
+num_a = 22
 num_b = 7
 J = num_a*num_b
 
@@ -79,9 +79,13 @@ def a(n, x, i):
 		return int(x[i].lower()=='likewise')
 	elif(n==19):
 		return int(x[i].lower()=='meanwhile')
-	elif(n==20):
+	elif(n==20):	
 		pos = POS(x[i])
 		return int(pos[0]=='NNP')
+	elif(n==21):
+		return int(x[0].lower()=='the')
+	elif(n==22):
+		return int(x[0].lower()=='i')
 	else :	
 		print 'err! wrong n'
 
