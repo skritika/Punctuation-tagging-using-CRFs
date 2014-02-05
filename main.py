@@ -18,11 +18,19 @@ Low-level feature functions
 from helper import *
 
 def train(train_data, train_labels):
-	'''Trains model using the training data'''	
+	'''Trains model using the training data
 	for i in range(len(train_data)):
 		l = train_labels[i].split(' ')
 		print POS(train_data[i]) 
 		print l
+		'''
+	W = np.zeros(J,dtype='float')
+	num_epochs = 5
+	iterations = 0
+	lamda = 0.05
+	while(iterations < num_epochs):
+		W = W + lamda * single_grad(X,Y,W)	
+	return W
 
 def test(test_data, test_labels):
 	'''Function to test the trained model on test data'''	
@@ -36,5 +44,3 @@ test_labels = load_data('punctuationDataset/testLabels.txt')
 
 train(train_data, train_labels)
 #test(test_data, test_labels)
-
-

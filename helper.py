@@ -31,7 +31,7 @@ def g(i,y_1,y,X,W):
     return ret
 
 def g_vector(i,v,X,W, method): #g customised for alpha,beta calculation
-    ret = np.zeros(m+2,dtype=float)
+    ret = np.empty(m+2,dtype=float)
     if(method == "alpha"):		
         for u in range(m+2):
             ret[u] = g(i,u,v,X,W) 
@@ -49,10 +49,10 @@ def alpha(X,W):
 	return a
 
 def beta(X,W):
-    b = np.zeros((m+2,n+2),dtype=float)
-    b[m+1,n+1] = 1.0
-    for k in range(n,0,-1):
-        for u in range(m+2):
+    b = np.zeros((m+2,n+1),dtype=float)
+    b[m+1,n] = 1.0
+    for k in range(n-1,0,-1):
+        for u in range(0,m+2):
             b[u,k] = np.dot(b[:,k+1], np.exp(g_vector(k+1,u,X,W,"beta")))
     return b
 
@@ -63,19 +63,43 @@ def Z(X,W,method):
 		return sum(a[n,:])
 	elif(method=="beta") :
 		b = beta(X,W)
-		return np.dot(np.exp(g_vector(1,t2i("START"),X,W,"beta")), b[:,1])
+		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,0])
 	
-def expectation_F(j,X,Y):
+def expectation_F(j,W,X):
 	n = len(X)
 	val = 0.0
 	a = alpha(X,W)
 	b = beta(X,W)
 	z = sum(a[n,:])
-	for i in range(1,n+1):
-		for l in range(0,m+1):
+	for i in range(0,n):
+		for l in range(0,m+2):
 			for k in range(1,m+2):
-			    val += f(j,l,k,X,i)*(a(i-1,l)*np.exp(g(i,l,k,X,W))* b[k,i])/z
+			    val = val + f(j,l,k,X,i)*(a(i-1,l)*np.exp(g(i,l,k,X,W))* b[k,i])/z
 	return val
+
+def single_grad(j,X,W,Y):
+	ret = np.empty(J,dtype=float)
+	for j in range(J):
+		ret[j] =  (F(j, X, Y, W) - expectation_F(j,W,X))
+	return ret
+
+def decode(X,W):
+	n = len(X)
+	U = np.empty((n+1,m+2),dtype=float) #U[0,:] not used 
+	y_hat = np.zeros(n+1,dtype=int) # y_hat[0] not used
+	
+	## filling U matrix
+	for v in range(m+2):
+		U[1,v] = g(1,t2i("START"),v,X,W)
+	for k in range(2,n+1):
+		for v in range(m+2):
+			U[k,v] = np.max(U[k-1,:]+g_vector(k,v,X,W,"alpha"))
+
+	## finding optimal sequence
+	y_hat[n] = 	np.argmax(U[n,:])
+	for i in range(n-1,0,-1):
+		y_hat[i] = np.argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
+	return y_hat
 
 def t2i (tag): #tag to int
 	if(tag=="START"): return 0
