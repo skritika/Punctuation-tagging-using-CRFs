@@ -41,19 +41,21 @@ def g_vector(i,v,X,W, method): #g customised for alpha,beta calculation
     return ret
 
 def alpha(X,W):
+	n = len(X)
 	a = np.zeros((n+1,m+2),dtype=float)
 	a[0,0]=1.0
 	for k in range(n):
 		for v in range(m+2):
-			a[k+1,v] = np.dot(alpha[k,:], np.exp(g_vector(k+1,v,X,W,"alpha")))
+			a[k+1,v] = np.dot(a[k,:], np.exp(g_vector(k+1,v,X,W,"alpha")))
 	return a
 
 def beta(X,W):
-    b = np.zeros((m+2,n+1),dtype=float)
-    b[m+1,n] = 1.0
-    for k in range(n-1,0,-1):
-        for u in range(0,m+2):
-            b[u,k] = np.dot(b[:,k+1], np.exp(g_vector(k+1,u,X,W,"beta")))
+    n = len(X)
+    b = np.zeros((m+2,n+2),dtype=float)
+    b[m+1,n+1] = 1.0
+    for k in range(n,0,-1):
+        for u in range(m+2):
+            b[u,k] = np.dot(b[:,k+1].T, np.exp(g_vector(k+1,u,X,W,"beta")))
     return b
 
 def Z(X,W,method):
@@ -63,7 +65,7 @@ def Z(X,W,method):
 		return sum(a[n,:])
 	elif(method=="beta") :
 		b = beta(X,W)
-		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,0])
+		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,1])
 	
 def expectation_F(j,W,X):
 	n = len(X)
@@ -101,3 +103,14 @@ def decode(X,W):
 		y_hat[i] = np.argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
 	return y_hat
 
+def y2int(Y):
+	tags = np.empty(len(Y), dtype=int)
+	for i in range(len(Y)):
+		tags[i] = t2i(Y[i])
+	return tags
+
+def y2tag(Y):
+	tags = []
+	for i in range(len(Y)):
+		tags.append(i2t(Y[i]))
+	return tags
