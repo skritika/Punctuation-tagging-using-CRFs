@@ -65,7 +65,7 @@ def Z(X,W,method):
 		return sum(a[n,:])
 	elif(method=="beta") :
 		b = beta(X,W)
-		return np.dot(np.exp(g_vector(0,0,X,W,"beta")), b[:,1])
+		return np.dot(np.exp(g_vector(1,0,X,W,"beta")), b[:,1])
 	
 def expectation_F(j,W,X):
 	n = len(X)

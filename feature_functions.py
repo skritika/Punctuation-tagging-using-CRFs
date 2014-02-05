@@ -80,7 +80,7 @@ def a(n, x, i):
 	elif(n==20):
 		pos = POS(x[i])
 		return int(pos[0]=='NNP')
-	else	
+	else	:
 		print 'err! wrong n'
 
 def t2i(tag): #tag to int
