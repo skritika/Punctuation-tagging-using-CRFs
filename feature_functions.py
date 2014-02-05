@@ -8,8 +8,8 @@ Using POS
 '''
 
 global num_a, num_b, j
-num_a = 19
-num_b = 6
+num_a = 20
+num_b = 7
 J = num_a*num_b
 
 def f(j, yi_1, yi, x, i):
@@ -31,6 +31,8 @@ def b(n, yi_1, yi, i):
 		return int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
 	elif(n==6):
 		return int(yi_1==t2i('START') and yi==t2i('COMMA'))
+	elif(n==7):
+		return int(yi_1==t2i('START') and yi==t2i('COLON'))
 	else:
 		print 'err! wrong n'
 	
@@ -75,9 +77,11 @@ def a(n, x, i):
 		return int(x[i].lower()=='likewise')
 	elif(n==19):
 		return int(x[i].lower()=='meanwhile')
-	else:
+	elif(n==20):
+		pos = POS(x[i])
+		return int(pos[0]=='NNP')
+	else	
 		print 'err! wrong n'
-
 
 def t2i(tag): #tag to int
 	if(tag=="START"): return 0
