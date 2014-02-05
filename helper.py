@@ -86,6 +86,9 @@ def expectation_F(X,W):
 def single_grad(X,Y,W):
 	return (F(X, Y, W) - expectation_F(X,W))
 
+def collins_grad(X,Y,W):
+	return (F(X, Y, W) - F(X,decode(X,W),W))
+
 def decode(X,W):
 	n = len(X)
 	U = np.empty((n+1,m+2),dtype=float) #U[0,:] not used 

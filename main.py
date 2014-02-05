@@ -32,7 +32,7 @@ def train(train_data, train_labels):
 		for i in range(len(train_data)):
 			X = train_data[0].split()
 			Y = y2int(train_labels[0].split())
-			W = W + lamda * single_grad(X,Y,W)
+			W = W + lamda * collins_grad(X,Y,W)
 			print i
 	return W
 
