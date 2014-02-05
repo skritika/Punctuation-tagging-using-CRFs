@@ -1,4 +1,5 @@
-# convention_ucsd: i = 1 denotes the first element in X, to acces it use X[0] not X[1]
+'''
+convention_ucsd: i = 1 denotes the first element in X, to acces it use X[0] not X[1]
 1. The current word is 'and, but, yet, or, nor, for, so' and the previous tag is COMMA. 
 2. The current word is 'however, consequently, otherwise, moreover, nevertheless', the previous tag is COMMA and the current tag is COMMA.
 3. The previous tag is 'PERIOD/EXCLAMATION_POINT/QUESTION_MARK' and the current tag is STOP.
@@ -6,7 +7,7 @@
 
 Using POS
 
-
+'''
 
 def f(j,y_1,y,X,i):
 	n = len(X)
