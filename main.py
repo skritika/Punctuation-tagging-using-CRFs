@@ -16,12 +16,11 @@ Low-level feature functions
 
 '''		
 from helper import *
-
 def collins_train(data, pos, labels, num_epochs):
 	iterations = 0
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(100):
+		for i in range(5):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + collins_grad(X,Y,W)

@@ -90,11 +90,14 @@ def decode(X,W):
 		for v in range(m+2):
 			U[k,v] = np.max(U[k-1,:]+g_vector(k,v,X,W,"alpha"))
 	## finding optimal sequence
-	y_hat[n] = 	np.argmax(U[n,:])
+	y_hat[n] = 	argmax(U[n,:])
 	for i in range(n-1,0,-1):
-		y_hat[i] = np.argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
+		y_hat[i] = argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
 	return y_hat
 
+def argmax(v):
+	return np.argmax(v[1:-1])+1
+	
 def y2int(Y): #start and stop tags appended
 	n = len(Y)
 	tags = np.empty(n+2, dtype=int)
