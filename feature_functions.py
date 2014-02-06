@@ -19,24 +19,27 @@ def f(j, yi_1, yi, X, i):
 	bi = (j-ai)/num_a + 1
 	return a(ai, X, i) and b(bi, yi_1, yi, i)
 
+
+def b1(yi_1, yi, i):
+	return int(yi_1==t2i('COMMA'))
+def b2(yi_1, yi, i):
+	return int(yi_1==t2i('COMMA') and yi==t2i('COMMA'))
+def b3(yi_1, yi, i):
+	return int(yi_1==t2i('PERIOD') and yi==t2i('STOP'))
+def b4(yi_1, yi, i):
+	return int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
+def b5(yi_1, yi, i):
+	return int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
+def b6(yi_1, yi, i):
+	return int(yi_1==t2i('START') and yi==t2i('COMMA'))
+def b7(yi_1, yi, i):
+	return int(yi_1==t2i('START') and yi==t2i('COLON'))
+
 def b(n, yi_1, yi, i):
-	if(n==1):
-		return int(yi_1==t2i('COMMA'))
-	elif(n==2):
-		return int(yi_1==t2i('COMMA') and yi==t2i('COMMA'))
-	elif(n==3):
-		return int(yi_1==t2i('PERIOD') and yi==t2i('STOP'))
-	elif(n==4):
-		return int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
-	elif(n==5):
-		return int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
-	elif(n==6):
-		return int(yi_1==t2i('START') and yi==t2i('COMMA'))
-	elif(n==7):
-		return int(yi_1==t2i('START') and yi==t2i('COLON'))
-	else:
-		#print 'err! wrong n'
-		return 0
+	arr_b = ['b1(yi_1, yi, i)','b2(yi_1, yi, i)','b3(yi_1, yi, i)','b4(yi_1, yi, i)','b5(yi_1, yi, i)','b6(yi_1, yi, i)','b7(yi_1, yi, i)']
+ 	a = exec(arr_b[n-1])
+	return a
+
 def a(n, X, i):
 	length = len(X)
 	if(i==len(X)+1):
