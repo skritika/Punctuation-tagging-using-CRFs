@@ -88,7 +88,7 @@ def a(n, X, i):
 	elif(n==22):
 		return int(X[0].lower()=='i')
 	else :	
-		#print 'err! wrong n'
+		print 'err! wrong n'
 		return 0
 
 def t2i(tag): #tag to int
@@ -113,10 +113,3 @@ def i2t(val): # int to tag
 	elif(val==7): return "STOP"
 	else: return ""
 
-
-def POS(sentence):
-    pos = nltk.pos_tag(sentence)
-    tags = []
-    for each in pos:
-        tags.append(each[1])
-    return tags

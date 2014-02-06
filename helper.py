@@ -4,7 +4,7 @@ global m
 m = 6 # assume 0th tag = START, (m+1)th tag = STOP
 
 def load_data(file_path):
-    f = open(file_path, 'r')
+    f = open('punctuationDataset/'+file_path+'.txt', 'r')
     list_data = [s.split() for s in f]
     return list_data
 
@@ -109,3 +109,11 @@ def y2tag(Y): #start and stop tags ignored
 	for i in range(1,len(Y)):
 		tags.append(i2t(Y[i]))
 	return tags
+
+
+def POS(sentence):
+    pos = nltk.pos_tag(sentence)
+    tags = []
+    for each in pos:
+        tags.append(each[1])
+    return tags
