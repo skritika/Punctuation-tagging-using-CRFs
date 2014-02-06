@@ -10,7 +10,7 @@ Using POS
 import nltk
 global num_a, num_b, J
 num_a = 22
-num_b = 7
+num_b = 10
 J = num_a*num_b
 
 def f(j, yi_1, yi, X, i):
@@ -29,7 +29,10 @@ def b(n, yi_1, yi, i):
 		4: yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'),
 		5: yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'),
 		6: yi_1==t2i('START') and yi==t2i('COMMA'),
-		7: yi_1==t2i('START') and yi==t2i('COLON')
+		7: yi_1==t2i('START') and yi==t2i('COLON'),
+		8: yi==t2i('COMMA'),
+		9: yi==t2i('SPACE'),
+		10: yi_1==t2i('SPACE')
 	}[n]
 	return 0
 	
