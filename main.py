@@ -21,15 +21,18 @@ def collins_train(data, pos, labels, num_epochs):
 	iterations = 0
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(1000):
+		for i in range(100):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + collins_grad(X,Y,W)
-			print i,W
+			print i, W
+		iterations = iterations +  1
 	return W
+
 
 def test(data, pos, labels, W):
 	num_test = len(data)
+	print "num", num_test
 	true_tags = 0
 	tot_tags = 0
 	for i in range(num_test):
@@ -37,8 +40,9 @@ def test(data, pos, labels, W):
 		X = [data[i], pos[i]]
 		Y = y2int(labels[i])
 		Y_pred = decode(X,W)
-		tot_tags += len(X)
-		true_tags += sum(Y_pred==Y)
+		print Y_pred
+		tot_tags += len(X[0])
+		true_tags += np.sum(Y_pred==Y)
 	print "prediction accuracy : " , true_tags/tot_tags , "%"
 
 train_data = load_data('trainingSentences')
@@ -48,8 +52,8 @@ test_data = load_data('testSentences')
 test_labels = load_data('testLabels')
 test_POS = load_data('testPOS')
 
-collins_train(train_data, train_POS, train_labels, 3)
-#test(test_data, test_POS, test_labels,np.ones(J, dtype=float))
+W = collins_train(train_data, train_POS, train_labels, 1)
+test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
 
 #use this once before starting the training
 #def cache_POS(data, file_name ):

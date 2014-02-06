@@ -9,7 +9,7 @@ def load_data(file_path):
     return list_data
 
 def F(X, Y, W):
-	n = len(X)
+	n = len(X[0])
 	F_vec = np.zeros(J, dtype=float)
 	for j in range(J):	
 		for i in range(1,n+2):
@@ -33,7 +33,7 @@ def g_vector(i,v,X,W, method): #g customised for alpha,beta calculation
     return ret
 
 def alpha(X,W):
-	n = len(X)
+	n = len(X[0])
 	a = np.zeros((n+1,m+2),dtype=float)
 	a[0,0]=1.0
 	for k in range(n):
@@ -42,7 +42,7 @@ def alpha(X,W):
 	return a
 
 def beta(X,W):
-    n = len(X)
+    n = len(X[0])
     b = np.zeros((m+2,n+2),dtype=float)
     b[m+1,n+1] = 1.0
     for k in range(n,0,-1):
@@ -51,7 +51,7 @@ def beta(X,W):
     return b
 
 def Z(X,W,method):
-	n = len(X)
+	n = len(X[0])
 	if(method=="alpha"):
 		a = alpha (X,W)
 		return sum(a[-1,:])
@@ -61,7 +61,7 @@ def Z(X,W,method):
 	
 def expectation_F(X,W):
 	F = np.zeros(J, dtype=float)
-	n = len(X)
+	n = len(X[0])
 	a = alpha(X,W)
 	b = beta(X,W)
 	z = sum(a[-1,:])
@@ -79,7 +79,7 @@ def collins_grad(X,Y,W):
 	return (F(X, Y, W) - F(X,decode(X,W),W))
 
 def decode(X,W):
-	n = len(X)
+	n = len(X[0])
 	U = np.empty((n+1,m+2),dtype=float) #U[0,:] not used 
 	y_hat = np.zeros(n+2,dtype=int) # y_hat[0] not used
 	y_hat[n+1] = m+1 #stop tag
