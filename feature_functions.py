@@ -15,8 +15,8 @@ J = num_a*num_b
 
 def f(j, yi_1, yi, X, i):
 	#j = ai + (bi-1)*num_a
-	ai = j%num_a
-	bi = (j-ai)/num_a + 1
+	ai = j%num_a + 1
+	bi = (j-ai + 1)/num_a + 1
 	return a(ai, X, i) and b(bi, yi_1, yi, i)
 
 
@@ -30,61 +30,38 @@ def b(n, yi_1, yi, i):
 		6: int(yi_1==t2i('START') and yi==t2i('COMMA')),
 		7: int(yi_1==t2i('START') and yi==t2i('COLON'))
 	}[n]
+	return 0
 	
 def a(n, X, i):
 	[x, p] = X
 	length = len(x)
-	if(i==len(x)+1):
-		return 0
+	if(i==length+1): return 0
 	i = i - 1
-	if(n==1):
-		return int(x[i].lower()=='and')
-	elif(n==2):
-		return int(x[i].lower()=='but')
-	elif(n==3):
-		return int(x[i].lower()=='yet')
-	elif(n==4):
-		return int(x[i].lower()=='or')
-	elif(n==5):
-		return int(x[i].lower()=='nor')
-	elif(n==6):
-		return int(x[i].lower()=='for')
-	elif(n==7):
-		return int(x[i].lower()=='so')
-	elif(n==8):
-		return int(x[i].lower()=='however')
-	elif(n==9):
-		return int(x[i].lower()=='consequently')
-	elif(n==10):
-		return int(x[i].lower()=='otherwise')
-	elif(n==11):
-		return int(x[i].lower()=='moreover')
-	elif(n==12):
-		return int(x[i].lower()=='nevertheless')
-	elif(n==13):
-		return int(x[i].lower()=='well')
-	elif(n==14):
-		return int(x[i].lower()=='now')
-	elif(n==15):
-		return int(x[i].lower()=='yes')
-	elif(n==16):
-		return int(x[i].lower()=='furthermore')
-	elif(n==17):
-		return int(x[i].lower()=='specifically')
-	elif(n==18):
-		return int(x[i].lower()=='likewise')
-	elif(n==19):
-		return int(x[i].lower()=='meanwhile')
-	elif(n==20):	
-		return int(i==0 and p[0]=='NNP')
-	elif(n==21):
-		return int(i==0 and x[0].lower()=='the')
-	elif(n==22):
-		return int(i==0 and x[0].lower()=='i')
-	else :	
-		print 'err! wrong n'
-		return 0
-
+	return {
+		1: int(x[i].lower()=='and'),
+		2: int(x[i].lower()=='but'),
+		3: int(x[i].lower()=='yet'),
+		4: int(x[i].lower()=='or'),
+		5: int(x[i].lower()=='nor'),
+		6: int(x[i].lower()=='for'),
+		7: int(x[i].lower()=='so'),
+		8: int(x[i].lower()=='however'),
+		9: int(x[i].lower()=='consequently'),
+		10: int(x[i].lower()=='otherwise'),
+		11: int(x[i].lower()=='moreover'),
+		12: int(x[i].lower()=='nevertheless'),
+		13: int(x[i].lower()=='well'),
+		14: int(x[i].lower()=='now'),
+		15: int(x[i].lower()=='yes'),
+		16: int(x[i].lower()=='furthermore'),
+		17: int(x[i].lower()=='specifically'),
+		18: int(x[i].lower()=='likewise'),
+		19: int(x[i].lower()=='meanwhile'),
+		20: int(x[i].lower()=='the'),
+		21: int(x[i].lower()=='i'),
+		22: int(p[i]=='NNP'),
+	}[n]
+	return 0
 def t2i(tag): #tag to int
 	if(tag=="START"): return 0
 	elif(tag=="COMMA"): return 1
