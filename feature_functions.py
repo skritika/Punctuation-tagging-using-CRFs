@@ -7,16 +7,17 @@
 Using POS
 '''
 
+import nltk
 global num_a, num_b, J
 num_a = 22
 num_b = 7
 J = num_a*num_b
 
-def f(j, yi_1, yi, x, i):
-	#j = bi + (ai-1)*num_a
-	bi = j%num_a
-	ai = (j-bi)/num_a + 1
-	return a(ai, x, i) and b(bi, yi_1, yi, i)
+def f(j, yi_1, yi, X, i):
+	#j = ai + (bi-1)*num_a
+	ai = j%num_a
+	bi = (j-ai)/num_a + 1
+	return a(ai, X, i) and b(bi, yi_1, yi, i)
 
 def b(n, yi_1, yi, i):
 	if(n==1):
@@ -34,60 +35,61 @@ def b(n, yi_1, yi, i):
 	elif(n==7):
 		return int(yi_1==t2i('START') and yi==t2i('COLON'))
 	else:
-		print 'err! wrong n'
-	
-def a(n, x, i):
-	length = len(x)
-	if(i==len(x)+1):
+		#print 'err! wrong n'
+		return 0
+def a(n, X, i):
+	length = len(X)
+	if(i==len(X)+1):
 		return 0
 	i = i - 1
 	if(n==1):
-		return int(x[i].lower()=='and')
+		return int(X[i].lower()=='and')
 	elif(n==2):
-		return int(x[i].lower()=='but')
+		return int(X[i].lower()=='but')
 	elif(n==3):
-		return int(x[i].lower()=='yet')
+		return int(X[i].lower()=='yet')
 	elif(n==4):
-		return int(x[i].lower()=='or')
+		return int(X[i].lower()=='or')
 	elif(n==5):
-		return int(x[i].lower()=='nor')
+		return int(X[i].lower()=='nor')
 	elif(n==6):
-		return int(x[i].lower()=='for')
+		return int(X[i].lower()=='for')
 	elif(n==7):
-		return int(x[i].lower()=='so')
+		return int(X[i].lower()=='so')
 	elif(n==8):
-		return int(x[i].lower()=='however')
+		return int(X[i].lower()=='however')
 	elif(n==9):
-		return int(x[i].lower()=='consequently')
+		return int(X[i].lower()=='consequently')
 	elif(n==10):
-		return int(x[i].lower()=='otherwise')
+		return int(X[i].lower()=='otherwise')
 	elif(n==11):
-		return int(x[i].lower()=='moreover')
+		return int(X[i].lower()=='moreover')
 	elif(n==12):
-		return int(x[i].lower()=='nevertheless')
+		return int(X[i].lower()=='nevertheless')
 	elif(n==13):
-		return int(x[i].lower()=='well')
+		return int(X[i].lower()=='well')
 	elif(n==14):
-		return int(x[i].lower()=='now')
+		return int(X[i].lower()=='now')
 	elif(n==15):
-		return int(x[i].lower()=='yes')
+		return int(X[i].lower()=='yes')
 	elif(n==16):
-		return int(x[i].lower()=='furthermore')
+		return int(X[i].lower()=='furthermore')
 	elif(n==17):
-		return int(x[i].lower()=='specifically')
+		return int(X[i].lower()=='specifically')
 	elif(n==18):
-		return int(x[i].lower()=='likewise')
+		return int(X[i].lower()=='likewise')
 	elif(n==19):
-		return int(x[i].lower()=='meanwhile')
+		return int(X[i].lower()=='meanwhile')
 	elif(n==20):	
-		pos = POS(x[i])
+		pos = POS(X)
 		return int(pos[0]=='NNP')
 	elif(n==21):
-		return int(x[0].lower()=='the')
+		return int(X[0].lower()=='the')
 	elif(n==22):
-		return int(x[0].lower()=='i')
+		return int(X[0].lower()=='i')
 	else :	
-		print 'err! wrong n'
+		#print 'err! wrong n'
+		return 0
 
 def t2i(tag): #tag to int
 	if(tag=="START"): return 0
@@ -110,3 +112,11 @@ def i2t(val): # int to tag
 	elif(val==6): return "SPACE"
 	elif(val==7): return "STOP"
 	else: return ""
+
+
+def POS(sentence):
+    pos = nltk.pos_tag(sentence)
+    tags = []
+    for each in pos:
+        tags.append(each[1])
+    return tags

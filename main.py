@@ -17,35 +17,33 @@ Low-level feature functions
 '''		
 from helper import *
 
-def train(train_data, train_labels):
-	'''Trains model using the training data
-	for i in range(len(train_data)):
-		l = train_labels[i].split(' ')
-		print POS(train_data[i]) 
-		print l
-		'''
-	num_epochs = 2
+def collins_train(data, labels, num_epochs):
 	iterations = 0
-	lamda = 0.05
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(100):
-			X = train_data[0].split()
-			Y = y2int(train_labels[0].split())
-			W = W + lamda * collins_grad(X,Y,W)
-			print i
-		print W
+		for i in range(10):
+			X = data[i]
+			Y = y2int(labels[i]) #start and stop tags also appended
+			W = W + collins_grad(X,Y,W)
 	return W
 
-def test(test_data, test_labels):
-	'''Function to test the trained model on test data'''	
-	#print test_data[0]
-	#print test_labels[0]
+def test(data, labels, W):
+	num_test = len(data)
+	true_tags = 0
+	tot_tags = 0
+	for i in range(num_test):
+		print i
+		X = data[i]
+		Y = y2int(labels[i])
+		Y_pred = decode(X,W)
+		tot_tags += len(X)
+		true_tags += sum(Y_pred==Y)
+	print "prediction accuracy : " , true_tags/tot_tags , "%"
 
 train_data = load_data('punctuationDataset/trainingSentences.txt')
 train_labels = load_data('punctuationDataset/trainingLabels.txt')
 test_data = load_data('punctuationDataset/testSentences.txt')
 test_labels = load_data('punctuationDataset/testLabels.txt')
 
-train(train_data, train_labels)
-#test(test_data, test_labels)
+collins_train(train_data, train_labels, 3)
+#test(test_data, test_labels,np.ones(J, dtype=float))

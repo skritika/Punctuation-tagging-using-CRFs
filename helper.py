@@ -1,30 +1,19 @@
 import numpy as np
-import nltk.tag
 from feature_functions import *
 global m
 m = 6 # assume 0th tag = START, (m+1)th tag = STOP
 
 def load_data(file_path):
     f = open(file_path, 'r')
-    list_data = f.readlines()
+    list_data = [s.split() for s in f]
     return list_data
-
-def POS(sentence):
-    tokens = nltk.word_tokenize(sentence)
-    pos = nltk.pos_tag(tokens)
-    tags = []
-    for each in pos:
-        tags.append(each[1])
-    return tags
 
 def F(X, Y, W):
 	n = len(X)
 	F_vec = np.zeros(J, dtype=float)
 	for j in range(J):	
-		F_vec[j] += f(j,t2i('START'),Y[0],X,1)
-		for i in range(1,n):
-			F_vec += f(j,Y[i-1],Y[i],X,i+1)
-		F_vec[j] += f(j,Y[n-1],t2i('STOP'),X,n+1)
+		for i in range(1,n+2):
+			F_vec[j] += f(j,Y[i-1],Y[i],X,i)
 	return F_vec
 
 def g(i,y_1,y,X,W):
@@ -65,7 +54,7 @@ def Z(X,W,method):
 	n = len(X)
 	if(method=="alpha"):
 		a = alpha (X,W)
-		return sum(a[n,:])
+		return sum(a[-1,:])
 	elif(method=="beta") :
 		b = beta(X,W)
 		return np.dot(np.exp(g_vector(1,0,X,W,"beta")), b[:,1])
@@ -83,7 +72,7 @@ def expectation_F(X,W):
 					F[j] = F[j] + f(j,l,k,X,i)*(a[i-1,l]*np.exp(g(i,l,k,X,W))* b[k,i])
 	return F/z
 
-def single_grad(X,Y,W):
+def sga_grad(X,Y,W):
 	return (F(X, Y, W) - expectation_F(X,W))
 
 def collins_grad(X,Y,W):
@@ -92,29 +81,31 @@ def collins_grad(X,Y,W):
 def decode(X,W):
 	n = len(X)
 	U = np.empty((n+1,m+2),dtype=float) #U[0,:] not used 
-	y_hat = np.zeros(n+1,dtype=int) # y_hat[0] not used
-	
+	y_hat = np.zeros(n+2,dtype=int) # y_hat[0] not used
+	y_hat[n+1] = m+1 #stop tag
 	## filling U matrix
 	for v in range(m+2):
 		U[1,v] = g(1,t2i("START"),v,X,W)
 	for k in range(2,n+1):
 		for v in range(m+2):
 			U[k,v] = np.max(U[k-1,:]+g_vector(k,v,X,W,"alpha"))
-
 	## finding optimal sequence
 	y_hat[n] = 	np.argmax(U[n,:])
 	for i in range(n-1,0,-1):
 		y_hat[i] = np.argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha"))
 	return y_hat
 
-def y2int(Y):
-	tags = np.empty(len(Y), dtype=int)
-	for i in range(len(Y)):
-		tags[i] = t2i(Y[i])
+def y2int(Y): #start and stop tags appended
+	n = len(Y)
+	tags = np.empty(n+2, dtype=int)
+	tags[0] = 0
+	tags[n+1] = m+1
+	for i in range(n):
+		tags[i+1] = t2i(Y[i])
 	return tags
 
-def y2tag(Y):
+def y2tag(Y): #start and stop tags ignored
 	tags = []
-	for i in range(len(Y)):
+	for i in range(1,len(Y)):
 		tags.append(i2t(Y[i]))
 	return tags
