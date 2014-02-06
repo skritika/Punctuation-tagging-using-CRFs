@@ -21,11 +21,11 @@ def collins_train(data, pos, labels, num_epochs):
 	iterations = 0
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(100):
+		for i in range(1000):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + collins_grad(X,Y,W)
-			print i
+			print i,W
 	return W
 
 def test(data, pos, labels, W):

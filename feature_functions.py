@@ -17,18 +17,19 @@ def f(j, yi_1, yi, X, i):
 	#j = ai + (bi-1)*num_a
 	ai = j%num_a + 1
 	bi = (j-ai + 1)/num_a + 1
-	return a(ai, X, i) and b(bi, yi_1, yi, i)
+	if (a(ai, X, i) and b(bi, yi_1, yi, i)): return 1.0
+	else: return 0.0
 
 
 def b(n, yi_1, yi, i):
 	return{
-		1: int(yi_1==t2i('COMMA')),
-		2: int(yi_1==t2i('COMMA') and yi==t2i('COMMA')),
-		3: int(yi_1==t2i('PERIOD') and yi==t2i('STOP')),
-		4: int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP')),
-		5: int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP')),
-		6: int(yi_1==t2i('START') and yi==t2i('COMMA')),
-		7: int(yi_1==t2i('START') and yi==t2i('COLON'))
+		1: yi_1==t2i('COMMA'),
+		2: yi_1==t2i('COMMA') and yi==t2i('COMMA'),
+		3: yi_1==t2i('PERIOD') and yi==t2i('STOP'),
+		4: yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'),
+		5: yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'),
+		6: yi_1==t2i('START') and yi==t2i('COMMA'),
+		7: yi_1==t2i('START') and yi==t2i('COLON')
 	}[n]
 	return 0
 	
@@ -38,28 +39,28 @@ def a(n, X, i):
 	if(i==length+1): return 0
 	i = i - 1
 	return {
-		1: int(x[i].lower()=='and'),
-		2: int(x[i].lower()=='but'),
-		3: int(x[i].lower()=='yet'),
-		4: int(x[i].lower()=='or'),
-		5: int(x[i].lower()=='nor'),
-		6: int(x[i].lower()=='for'),
-		7: int(x[i].lower()=='so'),
-		8: int(x[i].lower()=='however'),
-		9: int(x[i].lower()=='consequently'),
-		10: int(x[i].lower()=='otherwise'),
-		11: int(x[i].lower()=='moreover'),
-		12: int(x[i].lower()=='nevertheless'),
-		13: int(x[i].lower()=='well'),
-		14: int(x[i].lower()=='now'),
-		15: int(x[i].lower()=='yes'),
-		16: int(x[i].lower()=='furthermore'),
-		17: int(x[i].lower()=='specifically'),
-		18: int(x[i].lower()=='likewise'),
-		19: int(x[i].lower()=='meanwhile'),
-		20: int(x[i].lower()=='the'),
-		21: int(x[i].lower()=='i'),
-		22: int(p[i]=='NNP'),
+		1: x[i].lower()=='and',
+		2: x[i].lower()=='but',
+		3: x[i].lower()=='yet',
+		4: x[i].lower()=='or',
+		5: x[i].lower()=='nor',
+		6: x[i].lower()=='for',
+		7: x[i].lower()=='so',
+		8: x[i].lower()=='however',
+		9: x[i].lower()=='consequently',
+		10: x[i].lower()=='otherwise',
+		11: x[i].lower()=='moreover',
+		12: x[i].lower()=='nevertheless',
+		13: x[i].lower()=='well',
+		14: x[i].lower()=='now',
+		15: x[i].lower()=='yes',
+		16: x[i].lower()=='furthermore',
+		17: x[i].lower()=='specifically',
+		18: x[i].lower()=='likewise',
+		19: x[i].lower()=='meanwhile',
+		20: x[i].lower()=='the',
+		21: x[i].lower()=='i',
+		22: p[i]=='NNP'
 	}[n]
 	return 0
 def t2i(tag): #tag to int
