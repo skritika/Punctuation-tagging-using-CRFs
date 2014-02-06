@@ -22,65 +22,65 @@ def f(j, yi_1, yi, X, i):
 
 def b(n, yi_1, yi, i):
 	return{
-		1: int(yi_1==t2i('COMMA'))
-		2: int(yi_1==t2i('COMMA') and yi==t2i('COMMA'))
-		3: int(yi_1==t2i('PERIOD') and yi==t2i('STOP'))
-		4: int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
-		5: int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
-		6: int(yi_1==t2i('START') and yi==t2i('COMMA'))
+		1: int(yi_1==t2i('COMMA')),
+		2: int(yi_1==t2i('COMMA') and yi==t2i('COMMA')),
+		3: int(yi_1==t2i('PERIOD') and yi==t2i('STOP')),
+		4: int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP')),
+		5: int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP')),
+		6: int(yi_1==t2i('START') and yi==t2i('COMMA')),
 		7: int(yi_1==t2i('START') and yi==t2i('COLON'))
 	}[n]
 	
 def a(n, X, i):
-	length = len(X)
-	if(i==len(X)+1):
+	[x, p] = X
+	length = len(x)
+	if(i==len(x)+1):
 		return 0
 	i = i - 1
 	if(n==1):
-		return int(X[i].lower()=='and')
+		return int(x[i].lower()=='and')
 	elif(n==2):
-		return int(X[i].lower()=='but')
+		return int(x[i].lower()=='but')
 	elif(n==3):
-		return int(X[i].lower()=='yet')
+		return int(x[i].lower()=='yet')
 	elif(n==4):
-		return int(X[i].lower()=='or')
+		return int(x[i].lower()=='or')
 	elif(n==5):
-		return int(X[i].lower()=='nor')
+		return int(x[i].lower()=='nor')
 	elif(n==6):
-		return int(X[i].lower()=='for')
+		return int(x[i].lower()=='for')
 	elif(n==7):
-		return int(X[i].lower()=='so')
+		return int(x[i].lower()=='so')
 	elif(n==8):
-		return int(X[i].lower()=='however')
+		return int(x[i].lower()=='however')
 	elif(n==9):
-		return int(X[i].lower()=='consequently')
+		return int(x[i].lower()=='consequently')
 	elif(n==10):
-		return int(X[i].lower()=='otherwise')
+		return int(x[i].lower()=='otherwise')
 	elif(n==11):
-		return int(X[i].lower()=='moreover')
+		return int(x[i].lower()=='moreover')
 	elif(n==12):
-		return int(X[i].lower()=='nevertheless')
+		return int(x[i].lower()=='nevertheless')
 	elif(n==13):
-		return int(X[i].lower()=='well')
+		return int(x[i].lower()=='well')
 	elif(n==14):
-		return int(X[i].lower()=='now')
+		return int(x[i].lower()=='now')
 	elif(n==15):
-		return int(X[i].lower()=='yes')
+		return int(x[i].lower()=='yes')
 	elif(n==16):
-		return int(X[i].lower()=='furthermore')
+		return int(x[i].lower()=='furthermore')
 	elif(n==17):
-		return int(X[i].lower()=='specifically')
+		return int(x[i].lower()=='specifically')
 	elif(n==18):
-		return int(X[i].lower()=='likewise')
+		return int(x[i].lower()=='likewise')
 	elif(n==19):
-		return int(X[i].lower()=='meanwhile')
+		return int(x[i].lower()=='meanwhile')
 	elif(n==20):	
-		pos = POS(X)
-		return int(pos[0]=='NNP')
+		return int(i==0 and p[0]=='NNP')
 	elif(n==21):
-		return int(X[0].lower()=='the')
+		return int(i==0 and x[0].lower()=='the')
 	elif(n==22):
-		return int(X[0].lower()=='i')
+		return int(i==0 and x[0].lower()=='i')
 	else :	
 		print 'err! wrong n'
 		return 0

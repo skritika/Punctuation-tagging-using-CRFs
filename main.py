@@ -47,7 +47,7 @@ test_data = load_data('testSentences')
 test_labels = load_data('testLabels')
 test_POS = load_data('testPOS')
 
-#collins_train(train_data, train_POS, train_labels, 3)
+collins_train(train_data, train_POS, train_labels, 3)
 #test(test_data, test_POS, test_labels,np.ones(J, dtype=float))
 
 #use this once before starting the training
