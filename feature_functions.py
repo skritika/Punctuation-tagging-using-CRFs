@@ -9,7 +9,7 @@ Using POS
 
 import nltk
 global num_a, num_b, J
-num_a = 22
+num_a = 23
 num_b = 10
 J = num_a*num_b
 
@@ -63,7 +63,8 @@ def a(n, X, i):
 		19: x[i].lower()=='meanwhile',
 		20: x[i].lower()=='the',
 		21: x[i].lower()=='i',
-		22: p[i]=='NNP'
+		22: p[i]=='NNP',
+		23: 1
 	}[n]
 	return 0
 def t2i(tag): #tag to int

@@ -20,7 +20,7 @@ def collins_train(data, pos, labels, num_epochs):
 	iterations = 0
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(5):
+		for i in range(100):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + collins_grad(X,Y,W)
@@ -40,8 +40,11 @@ def test(data, pos, labels, W):
 		Y = y2int(labels[i])
 		Y_pred = decode(X,W)
 		print Y_pred
-		tot_tags += len(X[0])
+		print Y
+		tot_tags += len(data)
 		true_tags += np.sum(Y_pred==Y)
+		print tot_tags
+		print true_tags
 	print "prediction accuracy : " , true_tags/tot_tags , "%"
 
 train_data = load_data('trainingSentences')
