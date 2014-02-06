@@ -20,26 +20,17 @@ def f(j, yi_1, yi, X, i):
 	return a(ai, X, i) and b(bi, yi_1, yi, i)
 
 
-def b1(yi_1, yi, i):
-	return int(yi_1==t2i('COMMA'))
-def b2(yi_1, yi, i):
-	return int(yi_1==t2i('COMMA') and yi==t2i('COMMA'))
-def b3(yi_1, yi, i):
-	return int(yi_1==t2i('PERIOD') and yi==t2i('STOP'))
-def b4(yi_1, yi, i):
-	return int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
-def b5(yi_1, yi, i):
-	return int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
-def b6(yi_1, yi, i):
-	return int(yi_1==t2i('START') and yi==t2i('COMMA'))
-def b7(yi_1, yi, i):
-	return int(yi_1==t2i('START') and yi==t2i('COLON'))
-
 def b(n, yi_1, yi, i):
-	arr_b = ['b1(yi_1, yi, i)','b2(yi_1, yi, i)','b3(yi_1, yi, i)','b4(yi_1, yi, i)','b5(yi_1, yi, i)','b6(yi_1, yi, i)','b7(yi_1, yi, i)']
- 	a = exec(arr_b[n-1])
-	return a
-
+	return{
+		1: int(yi_1==t2i('COMMA'))
+		2: int(yi_1==t2i('COMMA') and yi==t2i('COMMA'))
+		3: int(yi_1==t2i('PERIOD') and yi==t2i('STOP'))
+		4: int(yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
+		5: int(yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
+		6: int(yi_1==t2i('START') and yi==t2i('COMMA'))
+		7: int(yi_1==t2i('START') and yi==t2i('COLON'))
+	}[n]
+	
 def a(n, X, i):
 	length = len(X)
 	if(i==len(X)+1):
