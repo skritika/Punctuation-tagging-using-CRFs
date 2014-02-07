@@ -80,7 +80,7 @@ def gibbs(X,Y,W,num):
 
 	g2 = np.zeros((n+2,m+2),dtype=float)	#gi+1(v,yi+1)
 	for i in range(2,n+2):
-		g1[i,:] = g_vector(i,Y[i],X,W,"alpha")		
+		g2[i,:] = g_vector(i,Y[i],X,W,"alpha")		
 	
 	Y_new = np.zeros(n+2)
 	Y_new[0] = 0
