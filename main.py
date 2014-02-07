@@ -23,7 +23,7 @@ def collins_train(data, pos, labels, num_epochs):
 		for i in range(len(data)):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
-			W = W + collins_grad(X,Y,W)
+			W = W + contrdiv_grad(X,Y,W)
 			print i
 		iterations = iterations +  1
 		print W

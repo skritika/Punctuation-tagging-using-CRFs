@@ -72,14 +72,15 @@ def expectation_F(X,W):
 					F[j] = F[j] + f(j,l,k,X,i)*(a[i-1,l]*np.exp(g(i,l,k,X,W))* b[k,i])
 	return F/z
 
-def gibbs(n,Y,W,num):
+def gibbs(X,Y,W,num):
+	n = len(X[0])
 	g1 = np.zeros((n+2,m+2),dtype=float)	#gi(yi_1,v)
 	for i in range(1,n+2):
-		g1[i,:] = gvector(i,Y[i-1],X,W,"beta")		
+		g1[i,:] = g_vector(i,Y[i-1],X,W,"beta")		
 
 	g2 = np.zeros((n+2,m+2),dtype=float)	#gi+1(v,yi+1)
 	for i in range(2,n+2):
-		g1[i,:] = gvector(i,Y[i],X,W,"alpha")		
+		g1[i,:] = g_vector(i,Y[i],X,W,"alpha")		
 	
 	Y_new = np.zeros(n+2)
 	Y_new[0] = 0
@@ -89,7 +90,7 @@ def gibbs(n,Y,W,num):
 		for j in range(1,m+1):
 			distri[j] = np.exp(g1[i,j])*np.exp(g2[i+1,j])
 		distri = distri/sum(distri)
-		Y_new[i] = int(np.random.choice(size(distri),1,p=distri))
+		Y_new[i] = int(np.random.choice(len(distri),1,p=distri))
 	return Y_new		
 
 def sga_grad(X,Y,W):
@@ -99,7 +100,7 @@ def collins_grad(X,Y,W):
 	return (F(X, Y, W) - F(X,decode(X,W), W))
 
 def contrdiv_grad(X,Y,W):
-	Y_new = gibbs(len(X[0]),Y,W,1)
+	Y_new = gibbs(X,Y,W,1)
 	return (F(X, Y, W) - F(X, Y_new, W))
 
 def decode(X,W):
