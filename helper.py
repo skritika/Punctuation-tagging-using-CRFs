@@ -72,11 +72,21 @@ def expectation_F(X,W):
 					F[j] = F[j] + f(j,l,k,X,i)*(a[i-1,l]*np.exp(g(i,l,k,X,W))* b[k,i])
 	return F/z
 
+def gibbs(X,Y,W,n):
+	for i in range(n):
+		for j in range(1,len(Y)):
+			
+
+
 def sga_grad(X,Y,W):
 	return (F(X, Y, W) - expectation_F(X,W))
 
 def collins_grad(X,Y,W):
 	return (F(X, Y, W) - F(X,decode(X,W),W))
+
+def contrdiv_grad(X,Y,W):
+	Y' = gibbs(X,Y,W,1);
+	return (F(X, Y, W) - F(X,Y',W))
 
 def decode(X,W):
 	n = len(X[0])
