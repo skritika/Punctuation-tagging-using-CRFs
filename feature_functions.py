@@ -9,7 +9,7 @@ Using POS
 
 import nltk
 global num_a, num_b, J
-num_a = 14
+num_a = 9
 num_b = 11
 J = num_a*num_b
 
@@ -50,14 +50,7 @@ def a(n, X, i):
 		5: x[i].lower()=='however',
 		6: x[i].lower()=='therefore',
 		7: x[i].lower()=='consequently',
-		8: x[i].lower()=='what',
-		9: x[i].lower()=='why',
-		10: x[i].lower()=='how',
-		11: x[i].lower()=='is',
-		12: x[i].lower()=='are',
-		13: x[i].lower()=='do',
-		14: x[i].lower()=='where',
-		15: x[i].lower()=='when'
+		8: x[i].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are']
 	}[n]
 
 def t2i(tag): #tag to int
