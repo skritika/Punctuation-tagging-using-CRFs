@@ -9,20 +9,21 @@ Using POS
 
 import nltk
 global num_a, num_b, J
-num_a = 6
+num_a = 14
 num_b = 11
 J = num_a*num_b
 
 def f(j, yi_1, yi, X, i):
-	#j = ai + (bi-1)*num_a
-	ai = j%num_a + 1
-	bi = (j-ai + 1)/num_a + 1
-	if (a(ai, X, i) and b(bi, yi_1, yi, i)): return 1.0
+	#j = ai + bi*num_a
+	ai = j%num_a
+	bi = (j-ai)/num_a
+	if (a(ai, X, i) and b(bi, yi_1, yi, i)):
+		return 1.0
 	else: return 0.0
-
 
 def b(n, yi_1, yi, i):
 	return{
+		0: yi_1==t2i('START'),
 		1: yi_1==t2i('COMMA'),
 		2: yi_1==t2i('COMMA') and yi==t2i('COMMA'),
 		3: yi_1==t2i('PERIOD') and yi==t2i('STOP'),
@@ -32,10 +33,8 @@ def b(n, yi_1, yi, i):
 		7: yi_1==t2i('START') and yi==t2i('COLON'),
 		8: yi==t2i('COMMA'),
 		9: yi==t2i('SPACE'),
-		10: yi_1==t2i('SPACE'),
-		11: yi_1==t2i('START')
+		10: yi_1==t2i('SPACE')
 	}[n]
-	return 0
 	
 def a(n, X, i):
 	[x, p] = X
@@ -43,14 +42,24 @@ def a(n, X, i):
 	if(i==length+1): return 0
 	i = i - 1
 	return {
+		0: 1,
 		1: x[i].lower()=='and',
 		2: x[i].lower()=='but',
 		3: x[i].lower()=='or',
 		4: p[i]=='NNP',
-		5: x[i].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are'],
-		6: 1
+		5: x[i].lower()=='however',
+		6: x[i].lower()=='therefore',
+		7: x[i].lower()=='consequently',
+		8: x[i].lower()=='what',
+		9: x[i].lower()=='why',
+		10: x[i].lower()=='how',
+		11: x[i].lower()=='is',
+		12: x[i].lower()=='are',
+		13: x[i].lower()=='do',
+		14: x[i].lower()=='where',
+		15: x[i].lower()=='when'
 	}[n]
-	return 0
+
 def t2i(tag): #tag to int
 	if(tag=="START"): return 0
 	elif(tag=="COMMA"): return 1

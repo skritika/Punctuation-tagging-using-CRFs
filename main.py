@@ -19,8 +19,13 @@ from helper import *
 def collins_train(data, pos, labels, num_epochs):
 	iterations = 0
 	W = np.zeros(J, dtype=float)
+	'''for i in range(len(data)):
+		if 'QUESTION_MARK' in labels[i]:
+			print data[i]
+			print labels[i]
+	'''
 	while(iterations < num_epochs):
-		for i in range(20000):
+		for i in range(10000):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + contrdiv_grad(X,Y,W)
