@@ -9,8 +9,8 @@ Using POS
 
 import nltk
 global num_a, num_b, J
-num_a = 23
-num_b = 10
+num_a = 6
+num_b = 11
 J = num_a*num_b
 
 def f(j, yi_1, yi, X, i):
@@ -32,7 +32,8 @@ def b(n, yi_1, yi, i):
 		7: yi_1==t2i('START') and yi==t2i('COLON'),
 		8: yi==t2i('COMMA'),
 		9: yi==t2i('SPACE'),
-		10: yi_1==t2i('SPACE')
+		10: yi_1==t2i('SPACE'),
+		11: yi_1==t2i('START')
 	}[n]
 	return 0
 	
@@ -44,27 +45,10 @@ def a(n, X, i):
 	return {
 		1: x[i].lower()=='and',
 		2: x[i].lower()=='but',
-		3: x[i].lower()=='yet',
-		4: x[i].lower()=='or',
-		5: x[i].lower()=='nor',
-		6: x[i].lower()=='for',
-		7: x[i].lower()=='so',
-		8: x[i].lower()=='however',
-		9: x[i].lower()=='consequently',
-		10: x[i].lower()=='otherwise',
-		11: x[i].lower()=='moreover',
-		12: x[i].lower()=='nevertheless',
-		13: x[i].lower()=='well',
-		14: x[i].lower()=='now',
-		15: x[i].lower()=='yes',
-		16: x[i].lower()=='furthermore',
-		17: x[i].lower()=='specifically',
-		18: x[i].lower()=='likewise',
-		19: x[i].lower()=='meanwhile',
-		20: x[i].lower()=='the',
-		21: x[i].lower()=='i',
-		22: p[i]=='NNP',
-		23: 1
+		3: x[i].lower()=='or',
+		4: p[i]=='NNP',
+		5: x[i].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are'],
+		6: 1
 	}[n]
 	return 0
 def t2i(tag): #tag to int

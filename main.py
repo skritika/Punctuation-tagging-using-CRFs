@@ -20,7 +20,7 @@ def collins_train(data, pos, labels, num_epochs):
 	iterations = 0
 	W = np.zeros(J, dtype=float)
 	while(iterations < num_epochs):
-		for i in range(1000):
+		for i in range(20000):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + contrdiv_grad(X,Y,W)
@@ -41,8 +41,10 @@ def test(data, pos, labels, W):
 		Y_pred = decode(X,W)
 		Y = Y[1:-1]
 		Y_pred = Y_pred[1:-1]
-		print Y_pred
+		print data[i]
+		print pos[i]	
 		print Y
+		print Y_pred
 		for i in range(len(Y)):
 			if not (Y[i]==6 or Y[i]==2):
 				true_tags += int(Y[i]==Y_pred[i])
