@@ -8,13 +8,26 @@ def load_data(file_path):
     list_data = [s.split() for s in f]
     return list_data
 
-def F(X, Y, W):
+def f_matrix(X,Y):
 	n = len(X[0])
-	F_vec = np.zeros(J, dtype=float)
-	for j in range(J):	
-		for i in range(1,n+2):
-			F_vec[j] += f(j,Y[i-1],Y[i],X,i)
-	return F_vec
+	temp = np.zeros((J,n+2),dtype=float) #(:,0) not used
+	nz_b =[]
+	nz_a=[]
+	for i in range(1,n+2):	
+		for k in range(num_b):
+			if(b(k,Y[i-1],Y[i],i)): nz_b.append(k)
+		for k in range(num_a):
+			if(a(k,X,i)): nz_a.append(k)
+		for p in nz_a:
+			for q in nz_b:
+				j = p + q*num_a
+				temp[j,i] = 1.0		
+		nz_a[:]=[]
+		nz_b[:]=[]
+	return temp
+	
+def F(X, Y, W):
+	return  np.sum(f_matrix(X,Y), axis =1)
 
 def g(i,y_1,y,X,W):
     ret = 0.0
