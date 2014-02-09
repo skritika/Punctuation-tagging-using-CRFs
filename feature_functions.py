@@ -17,7 +17,7 @@ def f(j, yi_1, yi, X, i):
 	#j = ai + bi*num_a
 	ai = j%num_a
 	bi = (j-ai)/num_a
-	if (a(ai, X, i) and b(bi, yi_1, yi, i)):
+	if (b(bi, yi_1, yi, i) and a(ai, X, i) ):
 		return 1.0
 	else: return 0.0
 

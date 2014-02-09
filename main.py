@@ -29,7 +29,7 @@ def collins_train(data, pos, labels, num_epochs):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + contrdiv_grad(X,Y,W)
-			print i
+			print W[53],W[54]
 		iterations = iterations +  1
 		print W
 	return W
@@ -63,8 +63,8 @@ test_data = load_data('testSentences')
 test_labels = load_data('testLabels')
 test_POS = load_data('testPOS')
 
-W = collins_train(train_data, train_POS, train_labels, 1)
-test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
+#W = collins_train(train_data, train_POS, train_labels, 1)
+#test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
 
 #use this once before starting the training
 #def cache_POS(data, file_name ):
@@ -72,5 +72,18 @@ test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
 #	for i in range(len(data)):
 #		f.write(' '.join(POS(data[i])) + '\n')
 #	f.close()
-	
+
 #cache_POS(test_data, 'testPOS')
+def custom(data, labels , pos_tags):
+	f = open('punctuationDataset/custom.txt', "w")
+	punc = ",.?!: "
+	for i in range(len(data)):
+		for j in range(len(train_data[i])):			
+			f.write(train_data[i][j]+"_"+ pos_tags[i][j])
+			t = t2i(train_labels[i][j])
+			f.write(punc[t-1])
+		f.write("\n")
+	f.close()
+
+
+#custom(train_data, train_labels, train_POS)
