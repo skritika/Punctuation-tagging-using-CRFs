@@ -39,18 +39,18 @@ def b(n, yi_1, yi, i):
 def a(n, X, i):
 	[x, p] = X
 	length = len(x)
-	if(i==length+1): return 0
+	f = i<>(length+1)
 	i = i - 1
 	return {
-		0: 1,
-		1: x[i].lower()=='and',
-		2: x[i].lower()=='but',
-		3: x[i].lower()=='or',
-		4: p[i]=='NNP',
-		5: x[i].lower()=='however',
-		6: x[i].lower()=='therefore',
-		7: x[i].lower()=='consequently',
-		8: x[i].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are']
+		0: f and 1,
+		1: f and x[i].lower()=='and',
+		2: f and x[i].lower()=='but',
+		3: f and x[i].lower()=='or',
+		4: f and p[i]=='NNP',
+		5: f and x[i].lower()=='however',
+		6: f and x[i].lower()=='therefore',
+		7: f and x[i].lower()=='consequently',
+		8: x[0].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are']
 	}[n]
 
 def t2i(tag): #tag to int

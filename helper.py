@@ -85,11 +85,11 @@ def gibbs(X,Y,W,num):
 	Y_new = np.zeros(n+2)
 	Y_new[0] = 0
 	Y_new[n+1] = 7
+	distri = np.zeros(m+2,dtype=float)
 	for i in range(1,n+1):
-		distri = np.zeros(m+2,dtype=float)
 		for j in range(1,m+1):
 			distri[j] = np.exp(g1[i,j])*np.exp(g2[i+1,j])
-		distri = distri/sum(distri)
+		distri = distri/np.sum(distri)
 		Y_new[i] = int(np.random.choice(len(distri),1,p=distri))
 	return Y_new		
 
