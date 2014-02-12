@@ -8,11 +8,58 @@ Using POS
 '''
 
 import nltk
-global num_a, num_b, J
-num_a = 12
-num_b = 11
-J = num_a*num_b
+global num_a, num_b, J, pos_tags, a_func
+a_func = []
+b_func = []
+pos_tags = ["CC","CD","DT","EX","FW","IN","JJ","JJR","JJS","LS","MD","NN","NNP","NNPS","NNS","PDT","POS","PRP","PRP$","RB","RBR","RBS","RP","SYM","TO","UH","VB","VBD","VBG","VBN","VBP","VBZ","WDT","WP","WP$","WRB"]
 
+#################### b_function implementation
+def b(n, yi_1, yi, i):
+	return b_func[n](yi_1,yi,i)
+
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('START'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA') and yi==t2i('COMMA'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('PERIOD') and yi==t2i('STOP'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('START') and yi==t2i('COMMA'))
+b_func.append(lambda yi_1,yi,i: yi_1==t2i('START') and yi==t2i('COLON'))
+b_func.append(lambda yi_1,yi,i: yi==t2i('COMMA'))
+b_func.append(lambda yi_1,yi,i: yi==t2i('SPACE'))
+b_func.append(lambda yi_1,yi,i: yi==t2i('COLON'))
+
+	
+#################### a_function implementation
+def a(n, X, i):
+	[x, pos] = X
+	length = len(x)
+	f = i<(length)
+	i = i - 1
+	return a_func[n](x,pos,i,f)
+	
+
+for p in pos_tags:
+	a_func.append(lambda x, pos, i, f: f and  pos[i]==p )
+	for q in pos_tags:
+		a_func.append(lambda x, pos, i, f: f and  (pos[i]==p and pos[i+1]==q))
+a_func.append(lambda x, pos, i, f: f and  x[i][0].isupper())
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='but')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='and')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='or')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='however')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='therefore')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='therefore')
+a_func.append(lambda x, pos, i, f: i==len(x)+1 and x[0].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are'])
+a_func.append(lambda x, pos, i, f: f and i==0 and pos[0]=="RB")
+a_func.append(lambda x, pos, i, f: f and x[i] in ["-","--"])
+
+
+
+#############
+num_a =  len(a_func)
+num_b =  len(b_func)
+J = num_a*num_b
 def f(j, yi_1, yi, X, i):
 	#j = ai + bi*num_a
 	ai = j%num_a
@@ -20,44 +67,6 @@ def f(j, yi_1, yi, X, i):
 	if (b(bi, yi_1, yi, i) and a(ai, X, i) ):
 		return 1.0
 	else: return 0.0
-
-def b(n, yi_1, yi, i):
-	return{
-		0: yi_1==t2i('START'),
-		1: yi_1==t2i('COMMA'),
-		2: yi_1==t2i('COMMA') and yi==t2i('COMMA'),
-		3: yi_1==t2i('PERIOD') and yi==t2i('STOP'),
-		4: yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'),
-		5: yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'),
-		6: yi_1==t2i('START') and yi==t2i('COMMA'),
-		7: yi_1==t2i('START') and yi==t2i('COLON'),
-		8: yi==t2i('COMMA'),
-		9: yi==t2i('SPACE'),
-		10: yi_1==t2i('SPACE'),
-		11: yi==t2i('COLON')
-	}[n]
-	
-def a(n, X, i):
-	[x, p] = X
-	length = len(x)
-	f = i<>(length+1)
-	i = i - 1
-	return {
-		0: f and 1,
-		1: f and x[i].lower()=='and',
-		2: f and x[i].lower()=='but',
-		3: f and x[i].lower()=='or',
-		4: f and p[i]=='NNP',
-		5: f and x[i].lower()=='however',
-		6: f and x[i].lower()=='therefore',
-		7: f and x[i].lower()=='consequently',
-		8: i==0 and x[0].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are'],
-		9: f and i==0 and p[0]=="RB",
-		10: f and i==1 and x[1]=="I",
-		11: f and x[i] in ["-","--"],
-		12: f and x[i][0].isupper()
-		
-	}[n]
 
 def t2i(tag): #tag to int
 	if(tag=="START"): return 0

@@ -24,16 +24,16 @@ def collins_train(data, pos, labels, num_epochs):
 			print data[i]
 			print labels[i]
 	'''
+	print "training started..."
 	while(iterations < num_epochs):
-		for i in range(1000):
+		for i in range(5000):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + contrdiv_grad(X,Y,W)
-			if(i%100==0): print i 
+			
 		iterations = iterations +  1
-		print W
+	print "training done...."
 	return W
-
 def test(data, pos, labels, W):
 	num_test = len(data)
 	print "num", num_test
@@ -43,7 +43,8 @@ def test(data, pos, labels, W):
 		print i
 		X = [data[i], pos[i]]
 		Y = y2int(labels[i])
-		Y_pred = decode(X,W)
+		nz_a = non_zero_a(X)
+		Y_pred = decode(X,W,nz_a)
 		Y = Y[1:-1]
 		Y_pred = Y_pred[1:-1]
 		print data[i]
