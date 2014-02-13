@@ -49,6 +49,7 @@ def a(n, X, i):
 	
 
 a_func.append(lambda x, pos, i, f: i<len(x)-1 and  x[i+1][0].isupper())
+a_func.append(lambda x, pos, i, f: f and True)
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='but')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='and')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='or')

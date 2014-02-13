@@ -11,7 +11,7 @@ for i in range(len(train_data)):
 	if 'COMMA' in train_labels[i]:
 		x = train_data[i]
 		y = train_labels[i]
-		if not ('then' in x  or 'I' in x[1:] or 'otherwise' in x or 'Otherwise' in x or 'example' in x or 'please' in x or 'Please' in x or 'although' in x or 'Therefore' in x or 'therefore' in x or x[0]=='Also' or x[0].endswith('ly') or 'however' in x or 'However' in x):
+		if not ('so' in x or 'then' in x  or 'I' in x[1:] or 'otherwise' in x or 'Otherwise' in x or 'example' in x or 'please' in x or 'Please' in x or 'although' in x or 'Therefore' in x or 'therefore' in x or x[0]=='Also' or x[0].endswith('ly') or 'however' in x or 'However' in x):
 			f1.write(str(train_data[i]))
 			f1.write('\n')
 			#f1.write(str(train_POS[i]))

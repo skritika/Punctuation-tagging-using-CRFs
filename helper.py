@@ -104,7 +104,11 @@ def gibbs(X,Y,W,num, nz_a):
 		for j in range(1,m+1):
 			distri[j] = np.exp(g1[i,j])*np.exp(g2[i+1,j])
 		distri = distri/np.sum(distri)
-		Y_new[i] = int(np.random.choice(len(distri),1,p=distri))
+		try:
+			Y_new[i] = int(np.random.choice(len(distri),1,p=distri))
+		except:
+			print distri
+			print sum(distri)
 	return Y_new		
 
 def sga_grad(X,Y,W):

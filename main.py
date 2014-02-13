@@ -64,8 +64,8 @@ test_data = load_data('testSentences')
 test_labels = load_data('testLabels')
 test_POS = load_data('testPOS')
 
-W = collins_train(train_data, train_POS, train_labels, 1)
-test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
+#W = collins_train(train_data, train_POS, train_labels, 1)
+#test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
 
 #use this once before starting the training
 #def cache_POS(data, file_name ):
