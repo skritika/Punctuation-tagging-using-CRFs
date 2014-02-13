@@ -48,11 +48,6 @@ def a(n, X, i):
 	return a_func[n](x,pos,i,f)
 	
 
-for p in pos_tags:
-	a_func.append(lambda x, pos, i, f, p=p: f and  pos[i]==p )
-	#print a_func[0](["re","rfv"], ["CC","CC"], 0, True)
-	for q in pos_tags:
-		a_func.append(lambda x, pos, i, f, p=p, q=q: f and  (pos[i]==p and pos[i+1]==q))
 a_func.append(lambda x, pos, i, f: i<len(x)-1 and  x[i+1][0].isupper())
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='but')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='and')
@@ -60,8 +55,13 @@ a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='or')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='however')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='therefore')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='therefore')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='example')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='otherwise')
+a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='then')
 a_func.append(lambda x, pos, i, f: i==len(x)+1 and x[0].lower() in ['were','have','can','was', 'who', 'what', 'why', 'where', 'do', 'is', 'whose', 'when', 'how','are'])
 a_func.append(lambda x, pos, i, f: f and i==0 and pos[0]=="RB")
+a_func.append(lambda x, pos, i, f: f and i==0 and pos[0]=="Also")
+a_func.append(lambda x, pos, i, f: f and i==0 and pos[0].endswith('ly'))
 a_func.append(lambda x, pos, i, f: f and x[i] in ["-","--"])
 
 #############

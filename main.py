@@ -26,7 +26,7 @@ def collins_train(data, pos, labels, num_epochs):
 	'''
 	print "training started..."
 	while(iterations < num_epochs):
-		for i in range(5000):
+		for i in range(20000):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + contrdiv_grad(X,Y,W)
@@ -64,8 +64,8 @@ test_data = load_data('testSentences')
 test_labels = load_data('testLabels')
 test_POS = load_data('testPOS')
 
-#W = collins_train(train_data, train_POS, train_labels, 1)
-#test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
+W = collins_train(train_data, train_POS, train_labels, 1)
+test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
 
 #use this once before starting the training
 #def cache_POS(data, file_name ):
