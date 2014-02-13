@@ -14,18 +14,22 @@ a_func = []
 b_func = []
 pos_tags = ["OTH", "CC","CD","DT","EX","FW","IN","JJ","JJR","JJS","LS","MD","NN","NNP","NNPS","NNS","PDT","POS","PRP","PRP$","RB","RBR","RBS","RP","SYM","TO","UH","VB","VBD","VBG","VBN","VBP","VBZ","WDT","WP","WP$","WRB"]
 punc_tags = ["START", "COMMA", "PERIOD", "QUESTION_MARK", "EXCLAMATION_POINT", "COLON",	"SPACE", "STOP"]
+punc_tags_1 = ["COMMA", "COLON", "SPACE"]
+punc_tags_2 = ["PERIOD", "QUESTION_MARK", "EXCLAMATION_POINT"]
 possible_bigrams = [[1,2,5,6],[1,2,3,4,6],[7],[7],[7],[1,2,6],[1,2,3,4,5,6],[]  ]
 #################### b_function implementation
-def same(p): return p
 def b(n, yi_1, yi, i):
 	return b_func[n](yi_1,yi,i)
 
-for p in range(len(punc_tags)):
+for p in range(len(punc_tags_1)):
 	b_func.append(lambda yi_1,yi,i, p=p: yi==p)
 	b_func.append(lambda yi_1,yi,i, p=p: yi_1==p)
 	for q in range(len(punc_tags)):
 		b_func.append(lambda yi_1,yi,i, p=p, q=q: yi_1==p and yi==q)
-
+		
+for p in range(len(punc_tags)):
+	b_func.append(lambda yi_1,yi,i, p=p: yi_1==p and yi=="STOP")
+	
 #b_func.append(lambda yi_1,yi,i: yi_1==t2i('START'))
 #b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA'))
 #b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA') and yi==t2i('COMMA'))

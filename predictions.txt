@@ -5,23 +5,23 @@ PRP VBZ IN PRP MD VB RB IN DT JJ NN
 If I do I'll call you
 IN PRP VBP NNP VB PRP
 6 6 6 6 6 2 
-1 6 1 6 6 2 
+6 6 1 6 6 2 
 Were you ever able to find a parking space for me
 VBD PRP RB JJ TO VB DT NN NN IN PRP
 6 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 1 6 6 3 
 No I can't make it this weekend
 DT PRP VBP VB PRP DT NN
 6 6 6 6 6 6 2 
-1 6 6 6 1 6 2 
+1 6 6 6 6 6 2 
 Are you making the trip
 VBP PRP VBG DT NN
 6 6 6 6 3 
-6 6 6 6 2 
+6 6 6 6 3 
 Here is a copy of my resume
 RB VBZ DT NN IN PRP$ VB
 6 6 6 6 6 6 2 
-1 6 6 6 6 6 2 
+1 6 6 1 6 6 2 
 If you need any other information please let me know
 IN PRP VBP DT JJ NN VBP VB PRP VB
 6 6 6 6 6 6 6 6 6 2 
@@ -29,7 +29,7 @@ IN PRP VBP DT JJ NN VBP VB PRP VB
 I have attached the Request Form
 PRP VBP VBN DT NN NN
 6 6 6 6 6 2 
-6 6 1 6 1 2 
+6 6 6 1 1 2 
 Please email the form back to me
 VB VB DT NN RB TO PRP
 6 6 6 6 6 6 2 
@@ -45,15 +45,15 @@ PRP VBD JJR IN DT JJ NN
 I definitely want them
 PRP RB VBP PRP
 6 6 6 2 
-6 6 6 2 
+6 6 6 3 
 How long did it take you to get up the elevator
 WRB RB VBD PRP VB PRP TO VB RP DT NN
 6 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 I made it in before the crowd backed up
 PRP VBD PRP IN IN DT NN VBD RP
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 1 6 2 
 She didn't seem too excited about it either
 PRP RB VBP RB JJ IN PRP CC
 6 6 6 6 6 6 6 2 
@@ -61,7 +61,7 @@ PRP RB VBP RB JJ IN PRP CC
 If you don't understand I am sure you can figure it out
 IN PRP VBP VB PRP VBP JJ PRP MD VB PRP RP
 6 6 6 1 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 2 
 I am writing this from my apt
 PRP VBP VBG DT IN PRP$ JJ
 6 6 6 6 6 6 2 
@@ -81,11 +81,11 @@ PRP VBP PRP VBD VBN
 Why did he call you
 WRB VBD PRP VB PRP
 6 6 6 6 3 
-6 6 6 6 2 
+6 6 6 6 3 
 That should tell you how my day's going
 DT MD VB PRP WRB PRP$ NNS VBG
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 1 2 
 I'll see you for lunch
 NNP VBP PRP IN NN
 6 6 6 6 2 
@@ -93,19 +93,19 @@ NNP VBP PRP IN NN
 I don't know who this chick is down here but Rock is telling her about the Bench
 PRP RB VBP WP DT NN VBZ RB RB CC NNP VBZ VBG PRP IN DT NN
 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 6 1 6 6 6 6 6 6 1 2 
 I don't think I can stay quiet much longer
 PRP VBP VB PRP MD VB JJ RB JJR
 6 6 6 6 6 6 6 6 4 
-6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 1 2 
 That'll save me a lot of time
 RB VB PRP DT NN IN NN
 6 6 6 6 6 6 2 
-6 6 1 6 6 6 2 
+1 6 6 6 1 6 2 
 How I have no idea
 WRB PRP VBP DT NN
 6 6 6 6 2 
-1 6 6 6 2 
+6 6 6 6 3 
 I had already rolled everything
 PRP VBD RB VBN NN
 6 6 6 6 2 
@@ -117,19 +117,19 @@ DT PRP VBD TO VB VBD VB CC VB PRP
 Yeah I know...I'm a grown woman I don't you telling me what to do
 UH PRP VBP DT JJ NN PRP VBP PRP VBG PRP WP TO VB
 1 6 6 6 6 6 6 6 6 6 6 6 6 4 
-1 6 6 6 6 1 6 6 6 6 1 6 6 2 
+1 6 6 6 6 1 6 6 6 6 6 6 6 2 
 I just completely forgot about it this weekend
 PRP RB RB VBN IN PRP DT NN
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 2 
 I meant to drop it off Sat
 PRP VBD TO VB PRP RB VBD
 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 
+6 6 6 6 6 1 2 
 It's just a matter of actually making myself go do it
 NNS RB DT NN IN RB VBG PRP VBP VB PRP
 6 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 6 6 6 6 2 
+6 6 6 1 6 6 6 6 6 6 2 
 Call me when you get out of French
 VB PRP WRB PRP VBP IN IN NNP
 6 6 6 6 6 6 6 2 
@@ -145,7 +145,7 @@ PRP VBD RB VBG IN VBG NN PRP RB VBD
 It's scary we think alike
 NNS JJ PRP VBP RB
 6 1 6 6 2 
-6 1 6 6 2 
+6 6 6 6 2 
 I can't believe I'm leaving tomorrow
 PRP VBP VB JJ NN NN
 6 6 6 6 6 2 
@@ -157,11 +157,11 @@ PRP VBP VBN RB TO VB NN
 Do you have French
 VBP PRP VBP JJ
 6 6 6 3 
-6 6 6 2 
+6 6 1 3 
 That would be such a shame if you couldn't go
 DT MD VB JJ DT NN IN PRP VBP VB
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 1 6 6 6 2 
 You might just have to come with me again
 PRP MD RB VB TO VB IN PRP RB
 6 6 6 6 6 6 6 6 2 
@@ -169,39 +169,39 @@ PRP MD RB VB TO VB IN PRP RB
 What website did you find that cruise on
 WP NN VBD PRP VB DT NN IN
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 3 
+6 6 6 6 6 6 1 3 
 Was it hard for you
 VBD PRP JJ IN PRP
 6 6 6 6 3 
-6 6 6 6 2 
+6 6 6 6 3 
 I feel like my whole body is swollen
 PRP VBP IN PRP$ JJ NN VBZ JJ
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 2 
 I'll just have to stay here all by myself
 NNP RB VBP TO VB RB DT IN PRP
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 2 
 If we go to lunch today it'll have to be kind of quick
 IN PRP VBP TO VB NN NN VBP TO VB NN IN JJ
 6 6 6 6 6 1 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 2 
 You have a real problem sending messages to the wrong people don't you
 PRP VBP DT JJ NN VBG NNS TO DT JJ NNS VBP PRP
 6 6 6 6 6 6 6 6 6 6 1 6 3 
-6 6 6 6 1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 3 
 I dropped it off on my way this morning
 PRP VBD PRP RP IN PRP$ NN DT NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 2 
 Are you awake
 VBP PRP RB
 6 6 3 
-6 6 2 
+6 6 3 
 Are you just hanging around waiting on me
 VBP PRP RB VBG RB VBG IN PRP
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 3 
 And I thought you were a nice guy
 CC PRP VBD PRP VBD DT JJ NN
 6 6 6 6 6 6 6 4 
@@ -213,19 +213,19 @@ NNP VBD PRP JJ
 It's not exactly career enhancing to make your boss wait
 NNS RB RB NN VBG TO VB PRP$ NN NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 What you talking about Willis
 WP PRP VBG IN NNP
 6 6 6 1 3 
-6 6 6 6 2 
+6 6 6 6 3 
 I thought you were in Chicago
 PRP VBD PRP VBD IN NNP
 6 6 6 6 6 2 
-6 6 6 6 6 2 
+6 6 6 6 1 2 
 If I had a car I'd drive into town and explore a bit
 IN PRP VBD DT NN JJ NN IN NN CC VB DT NN
 6 6 6 6 1 6 6 6 6 6 6 6 2 
-1 6 6 6 1 6 6 6 1 6 6 6 2 
+6 6 6 6 1 6 6 6 6 6 6 6 2 
 He said it was pretty bad there
 PRP VBD PRP VBD RB JJ EX
 6 6 6 6 6 6 2 
@@ -249,19 +249,19 @@ PRP VBP PRP VBN TO VB VBG NNS IN RB
 Well I have to work a double shift to cover for someone all but one week this month
 RB PRP VBP TO VB DT JJ NN TO VB IN NN DT CC CD NN DT NN
 1 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 6 6 6 6 6 6 1 6 6 6 1 6 2 
+1 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
 So that's pretty much all I have time to do now
 IN NNS RB RB DT PRP VBP NN TO VB RB
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 Let me know how you're doing when you get a chance
 VB PRP VB WRB JJ VBG WRB PRP VBP DT NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 I know she's the best risk person we have but give me a break
 PRP VBP VBZ DT JJS NN NN PRP VBP CC VBP PRP DT NN
 6 6 6 6 6 6 6 6 1 6 6 6 6 4 
-6 6 6 6 6 6 1 6 6 6 6 1 6 2 
+6 6 6 6 6 1 6 6 1 6 6 6 6 2 
 I adjusted McKay and Lambie's positions so they should be correct now
 PRP VBD NNP CC NNP NNS IN PRP MD VB JJ RB
 6 6 6 6 6 1 6 6 6 6 6 2 
@@ -273,19 +273,19 @@ VB PRP VB IN PRP VBP RB RP
 If you have any questions give me a call
 IN PRP VBP DT NNS VBP PRP DT NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 1 6 6 6 2 
 I always said I didn't care
 PRP RB VBD PRP VBP NN
 6 6 6 6 6 2 
-6 6 1 6 6 2 
+6 6 6 6 6 3 
 This is the time when you regret that but anyways
 DT VBZ DT NN WRB PRP VBP IN CC NNS
 6 6 6 6 6 6 6 1 6 2 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 1 6 6 6 6 6 2 
 I first thought of just going to dinner then I thought of maybe doing something else
 PRP RB VBD IN RB VBG TO NN RB PRP VBD IN RB VBG NN RB
 6 6 6 6 6 6 6 1 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 6 6 6 6 1 2 
+6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 2 
 Now I don't know anything
 RB PRP VBP VB NN
 1 6 6 6 2 
@@ -293,23 +293,23 @@ RB PRP VBP VB NN
 Why do you need to know if we do something else
 WRB VBP PRP VB TO VB IN PRP VBP NN RB
 6 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 1 2 
+6 6 6 6 6 6 6 6 6 6 3 
 Do you worry you might go to bed a little late
 VBP PRP VB PRP MD VB TO NN DT JJ JJ
 6 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 So are you thinking going to dinner or something else
 RB VBP PRP VBG VBG TO NN CC NN RB
 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 1 2 
+1 6 6 6 6 6 6 6 6 2 
 I work with a guy in our Chicago office
 PRP VBP IN DT NN IN PRP$ NNP NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 1 6 6 6 2 
 You know you can buy disposable cameras at most stores
 PRP VBP PRP MD VB JJ NNS IN JJS NNS
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 3 
 Wish I had thought to bring a camera
 NNP PRP VBD VBN TO VB DT NN
 6 6 6 6 6 6 6 2 
@@ -317,11 +317,11 @@ NNP PRP VBD VBN TO VB DT NN
 The temperature when I landed was ZERO degrees
 DT NN WRB PRP VBD VBD JJ NNS
 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 2 
+6 1 6 6 6 1 6 6 
 What a complete waste of my time
 WP DT JJ NN IN PRP$ NN
 6 6 6 6 6 6 4 
-6 6 6 6 6 6 2 
+6 6 6 6 6 6 3 
 I passed though
 PRP VBD IN
 6 6 2 
@@ -333,27 +333,27 @@ MD PRP VB VBG CC VBG TO VB PRP IN
 If I'd known that I would have finished it yesterday
 IN NNP VBD IN PRP MD VB VBN PRP NN
 6 6 6 6 6 6 6 6 6 2 
-1 6 6 1 6 6 6 1 6 2 
+6 6 6 1 6 6 6 6 6 3 
 Have you decided what you want to do tonight
 NNP PRP VBD WP PRP VBP TO VB NN
 6 6 6 6 6 6 6 6 3 
-1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 3 
 I'll give you a birthday call later
 RB VB PRP DT NN NN RB
 6 6 6 6 6 6 2 
-6 6 1 6 6 1 2 
+1 6 6 6 1 6 2 
 I am waiting for a more personal Happy Birthday call
 PRP VBP VBG IN DT RBR JJ JJ NN NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 1 1 6 2 
 What time did you get out of here yesterday
 WP NN VBD PRP VB IN IN RB NN
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 3 
 I'll tell you later
 RB VB PRP RB
 6 6 6 2 
-6 6 6 2 
+1 6 6 2 
 I can't imagine what she'd be doing with him
 PRP VBP VB WP VBD VB VBG IN PRP
 6 6 6 6 6 6 6 6 2 
@@ -369,7 +369,7 @@ PRP VBD TO VB IN NN IN PRP$ VBN NN RBR
 At least half if not more of the emails I send are to you
 IN JJS NN IN RB JJR IN DT NNS PRP VBP VBP TO PRP
 6 6 1 6 6 1 6 6 6 6 6 6 6 4 
-6 6 6 6 6 6 6 6 1 6 6 6 6 2 
+6 6 1 6 6 6 6 6 1 6 6 6 6 2 
 I didn't make it to the final test
 PRP VBP VB PRP TO DT JJ NN
 6 6 6 6 6 6 6 2 
@@ -377,7 +377,7 @@ PRP VBP VB PRP TO DT JJ NN
 So I only wasted two hours of my life this afternoon
 IN PRP RB VBD CD NNS IN PRP$ NN DT NN
 6 6 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 I still have one section left
 PRP RB VBP CD NN NN
 6 6 6 6 6 2 
@@ -393,7 +393,7 @@ RB VBZ RB JJ TO VB IN PRP RB
 Not that my car ever really leaves the Enron garage
 RB IN PRP$ NN RB RB VBZ DT NNP NN
 6 6 6 6 6 6 6 6 6 4 
-6 6 6 1 6 6 6 1 6 2 
+1 6 6 6 6 6 6 6 6 2 
 I probably have you more excited than you should be now
 PRP RB VBP PRP RBR JJ IN PRP MD VB RB
 6 6 6 6 6 6 6 6 6 6 2 
@@ -401,7 +401,7 @@ PRP RB VBP PRP RBR JJ IN PRP MD VB RB
 What time do you think you'll get out of here tonight
 WP NN VBP PRP VB NNP VB IN IN RB NN
 6 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 We are tired of it
 PRP VBP JJ IN PRP
 6 6 6 6 2 
@@ -413,19 +413,19 @@ PRP VBP RB VBN IN VBG IN PRP
 Did you start watching Defensive Driving
 VBD PRP VBP VBG NNP NNP
 6 6 6 6 6 3 
-6 6 6 1 6 2 
+6 6 6 1 1 2 
 What do you mean you almost got busted
 WP VBP PRP VB PRP RB VBD VBN
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 4 
+6 6 6 6 6 6 6 3 
 Just hoping I guess
 RB VBG PRP VBP
 6 6 6 2 
-6 1 6 2 
+1 1 6 2 
 Maybe you'll make it back by Easter
 RB RB VB PRP RB IN NNP
 6 6 6 6 6 6 2 
-6 6 6 6 6 6 2 
+1 6 6 6 6 1 2 
 Good luck with your trip
 JJ NN IN PRP$ NN
 6 6 6 6 2 
@@ -433,15 +433,15 @@ JJ NN IN PRP$ NN
 Sorry we won't get to see you for Christmas
 JJ PRP VBP VB TO VB PRP IN NNP
 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 2 
 Hope you like Chicago
 NNP PRP IN NNP
 6 6 6 2 
-1 6 6 2 
+6 6 6 2 
 I had a blast over there
 PRP VBD DT NN IN EX
 6 6 6 6 6 2 
-6 6 6 6 6 2 
+6 6 6 1 6 2 
 And what am I supposed to do once I'm there
 CC WP VBP PRP VBN TO VB RB VB EX
 6 6 6 6 6 6 6 6 6 3 
@@ -449,35 +449,35 @@ CC WP VBP PRP VBN TO VB RB VB EX
 What use would I have for a wool coat down here
 WP NN MD PRP VB IN DT NN NN RB RB
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 1 6 6 3 
 I'm going to freeze my tushy off
 NN VBG TO VB PRP$ NN IN
 6 6 6 6 6 6 2 
-1 6 6 6 6 6 2 
+6 6 6 6 6 6 2 
 You know I love Fajitas from there
 PRP VBP PRP VBP NNS IN EX
 6 6 6 6 6 6 2 
-6 1 6 6 6 6 2 
+6 1 6 1 6 6 2 
 What made you think I did not like Lupe's
 WP VBD PRP VBP PRP VBD RB VB NNS
 6 6 6 6 6 6 6 6 3 
-6 6 6 1 6 6 6 6 3 
+6 6 6 1 6 6 6 1 3 
 Have got some good gossip but I almost got busted a minute ago so you're gonna have to wait
 NNP VBD DT JJ NN CC PRP RB VBD VBN DT NN RB RB JJ NNS VBP TO VB
 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 6 6 4 
-6 6 6 6 1 6 6 6 6 1 6 1 6 6 6 6 6 6 2 
+6 6 6 6 1 6 6 6 6 6 6 1 6 6 6 6 6 6 3 
 I am now responsible for publishing the EES Gas Position Report
 PRP VBP RB JJ IN VBG DT NNP NNP NNP NNP
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 1 6 2 
+6 6 6 6 6 6 6 1 1 1 2 
 Did you get caught sneaking in late
 VBD PRP VB VBN VBG IN JJ
 6 6 6 6 6 6 3 
-6 6 6 1 6 6 2 
+6 6 6 6 6 6 2 
 I don't think anyone knew I was gone
 PRP VBP NN NN VBD PRP VBD VBN
 6 6 6 6 6 6 6 2 
-6 6 1 6 1 6 6 2 
+6 6 6 6 6 6 6 2 
 I'll go whenever you want
 JJ NN WRB PRP VBP
 6 6 6 6 2 
@@ -485,19 +485,19 @@ JJ NN WRB PRP VBP
 They have no political voice and the machines are old give me a break
 PRP VBP DT JJ NN CC DT NNS VBP JJ VBP PRP DT NN
 6 6 6 6 6 6 6 6 6 1 6 6 6 4 
-6 6 6 6 1 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 1 6 6 6 6 6 2 
 Oh my goodness cry me a river
 UH PRP$ NN NN PRP DT NN
 6 6 1 6 6 6 2 
-1 6 6 1 6 6 2 
+6 6 6 6 6 6 2 
 Don't send me any more of this crap today
 NNP VB PRP DT JJR IN DT NN NN
 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 1 2 
 I'm trying to enjoy my Friday
 NN VBG TO VB PRP$ NNP
 6 6 6 6 6 2 
-1 6 6 6 6 2 
+6 6 6 6 6 2 
 I think I told you that already
 PRP VBP PRP VBD PRP IN RB
 6 6 6 6 6 6 2 
@@ -505,23 +505,23 @@ PRP VBP PRP VBD PRP IN RB
 You're making me miss you already
 NNP VBG PRP VB PRP RB
 6 6 6 6 6 2 
-1 6 6 6 6 2 
+6 6 6 6 6 2 
 I definitely have time
 PRP RB VBP NN
 6 6 6 2 
-6 6 6 2 
+6 6 6 3 
 Give me a call when you want to go
 VB PRP DT NN WRB PRP VBP TO VB
 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 6 6 2 
+6 6 6 1 6 6 6 6 2 
 Do you have time
 VBP PRP VB NN
 6 6 6 3 
-6 6 6 2 
+6 6 6 3 
 I did finish but it was funny the way I finished it
 PRP VBD NN CC PRP VBD JJ DT NN PRP VBD PRP
 6 6 1 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 1 6 1 6 6 2 
+6 6 1 6 6 6 6 6 1 6 6 3 
 Did you finish on time
 VBD PRP VBP IN NN
 6 6 6 6 3 
@@ -537,15 +537,15 @@ IN PRP RB PRP VBP NN VBD PRP VB
 Here are my accomplishment
 RB VBP PRP$ NN
 6 6 6 2 
-6 6 6 2 
+1 6 6 2 
 Let me know if you need anything else before tomorrow afternoon
 VB PRP VB IN PRP VBP NN RB IN NN NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 Is it time to go home yet
 VBZ PRP NN TO VB NN RB
 6 6 6 6 6 6 3 
-6 6 6 6 6 1 2 
+6 6 6 6 6 6 3 
 I still haven't finished my accomplishments
 PRP RB NN VBD PRP$ NNS
 6 6 6 6 6 2 
@@ -569,19 +569,19 @@ NNP RB VBG PRP MD VB TO PRP$ NN IN
 How do you come up with all this
 WRB VBP PRP VB RP IN PDT DT
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 3 
 Did someone teach you how to write accomplishments
 VBD NN VBP PRP WRB TO VB NNS
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 3 
 I hadn't thought about integrating my goals into my accomplishments
 PRP VBP VBN IN VBG PRP$ NNS IN PRP$ NNS
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 1 6 6 2 
 And you consider me an overachiever
 CC PRP VBP PRP DT NN
 6 6 6 6 6 4 
-6 6 6 1 6 2 
+6 6 6 6 6 2 
 How did you start your accomplishments
 WRB VBD PRP VB PRP$ NNS
 6 6 6 6 6 3 
@@ -593,7 +593,7 @@ PRP VBP WP PRP VBD IN PRP$ JJR NN
 Maybe I could even come watch you play soccer
 RB PRP MD RB VB NN PRP VBP NN
 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 1 6 6 2 
+1 6 6 6 6 6 6 6 3 
 But all that hinges on my accomplishments
 CC DT IN NNS IN PRP$ NNS
 6 6 6 6 6 6 2 
@@ -601,7 +601,7 @@ CC DT IN NNS IN PRP$ NNS
 And of course since I put it off until today we violated every limit we have this morning
 CC IN NN IN PRP VBD PRP RP IN NN PRP VBD DT NN PRP VBP DT NN
 6 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 6 4 
-6 6 6 1 6 6 6 6 6 1 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 6 1 6 6 6 2 
 Well we didn't violate p&l just VAR and positions
 RB PRP VBP VB NN RB NNP CC NNS
 6 6 6 6 1 6 6 6 2 
@@ -613,7 +613,7 @@ VB PRP IN NN
 Do you think they'll let him/her get in
 VBP PRP VB RB VB JJR VB IN
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 3 
+6 6 6 6 6 6 2 3 
 I think this is it
 PRP VBP DT VBZ PRP
 6 6 6 6 2 
@@ -625,7 +625,7 @@ PRP VBP VBP NNP RB VBD NNP NNP NN
 Shocking isn't it
 JJ NN PRP
 6 6 3 
-6 1 6 
+6 6 3 
 Of course I remember
 IN NN PRP VBP
 6 6 6 2 
@@ -633,15 +633,15 @@ IN NN PRP VBP
 I have a great Spanish teacher
 PRP VBP DT JJ JJ NN
 6 6 6 6 6 2 
-6 6 6 1 6 2 
+6 6 6 6 6 2 
 Do you want to go to the brown bag tomorrow
 VBP PRP VBP TO VB TO DT JJ NN NN
 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 3 
 Gossett officially asked me for my accomplishments today
 NNP RB VBD PRP IN PRP$ NNS NN
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 1 2 
 I have to have them done by tomorrow night
 PRP VBP TO VB PRP VBN IN NN NN
 6 6 6 6 6 6 6 6 2 
@@ -653,35 +653,35 @@ CC IN IN DT VBG IN NN IN JJ NNS PRP VBD VB PRP IN DT
 No mention of you or Austin
 DT NN IN PRP CC NNP
 6 6 6 6 6 2 
-6 6 6 6 6 2 
+6 1 6 6 6 2 
 Was she mad at you
 VBD PRP JJ IN PRP
 6 6 6 6 3 
-6 6 6 6 2 
+6 6 6 6 3 
 You really want to leave badly don't you
 PRP RB VBP TO VB RB VBP PRP
 6 6 6 6 6 1 6 3 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 3 
 I don't think I have anything you can do though
 PRP VBP VB PRP VBP NN PRP MD VB IN
 6 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 What you talkin' bout Willis
 WP PRP VBP NN NNP
 6 6 6 6 3 
-6 6 6 1 6 
+6 6 6 1 3 
 I went home and took a little nap
 PRP VBD NN CC VBD DT JJ NN
 6 6 6 6 6 6 6 4 
-6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 6 2 
 But to answer your question yeah I'm ready to go
 CC TO VB PRP$ NN NN NN JJ TO VB
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 2 
+6 2 6 6 6 1 6 6 6 2 
 I probably shouldn't leave but I'm definitely ready
 PRP RB RB VB CC VB RB JJ
 6 6 6 1 6 6 6 4 
-6 6 6 6 6 6 6 2 
+6 6 6 1 1 6 6 2 
 You don't have me beat
 PRP VBP VB PRP VB
 6 6 6 6 2 
@@ -689,31 +689,31 @@ PRP VBP VB PRP VB
 We have them delivered at least a couple times a year
 PRP VBP PRP VBN IN JJS DT NN NNS DT NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 1 1 6 2 
+6 6 6 6 6 6 1 1 6 6 2 
 Not that I have any great ideas but I'm hoping I can find her some clothes
 RB IN PRP VBP DT JJ NNS CC NN VBG PRP MD VB PRP DT NNS
 6 6 6 6 6 6 1 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 1 6 6 1 6 6 6 1 6 2 
+1 1 6 6 6 6 1 1 6 6 6 6 6 6 6 2 
 If all else fails I'll get her blue earrings
 IN DT RB VBZ NNP VB PRP$ JJ NNS
 6 6 6 6 6 6 6 6 4 
-6 6 6 1 6 6 6 6 2 
+6 6 6 1 6 6 6 6 6 
 Are you watching CNN right now
 VBP PRP VBG NNP RB RB
 6 6 6 6 6 3 
-6 6 1 6 6 2 
+6 6 1 6 6 3 
 I also like the Sore Loserman signs
 PRP RB IN DT NNP NNP NNS
 6 6 6 6 6 6 2 
-6 6 6 6 1 6 2 
+6 6 6 1 1 6 2 
 Enjoy a doughnut for me
 VB DT NN IN PRP
 6 6 6 6 2 
-6 6 6 6 2 
+6 6 1 6 2 
 Besides you have the whole weekend to look forward to
 IN PRP VBP DT JJ NN TO VB RB TO
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 2 
 I am looking forward to picking on you
 PRP VBP VBG RB TO VBG IN PRP
 6 6 6 6 6 6 6 2 
@@ -725,7 +725,7 @@ DT VBZ PRP$ JJ NN IN NNP
 If your free for lunch sometime this week let me know
 IN PRP$ JJ IN NN RB DT NN VB PRP VB
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 1 6 1 6 6 2 
+6 6 6 6 6 6 6 1 6 6 2 
 Today is my favorite day of the month...we're rolling everything today
 NN VBZ PRP$ JJ NN IN DT NN VBG NN NN
 6 6 6 6 6 6 6 6 6 6 4 
@@ -737,11 +737,11 @@ VB PRP VB IN NNP VBG NN NN
 Knowing how things are down there you might just be starting your day
 VBG WRB NNS VBP RB RB PRP MD RB VB VBG PRP$ NN
 6 6 6 6 6 1 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 2 
 You didn't expect me to be awake in Spanish did you
 PRP VBP VB PRP TO VB JJ IN NNP VBD PRP
 6 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 I just might have that movie
 PRP RB MD VB DT NN
 6 6 6 6 6 2 
@@ -749,7 +749,7 @@ PRP RB MD VB DT NN
 By AAANNYYY coincidence would you happen to have that movie
 IN NNP NN MD PRP VB TO VB DT NN
 6 6 1 6 6 6 6 6 6 2 
-1 6 1 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 Thank you for returning my call
 VB PRP IN VBG PRP$ NN
 6 6 6 6 6 2 
@@ -761,11 +761,11 @@ RB PRP VBD RB VB DT NN
 Here is the P&L breakout you requested
 RB VBZ DT NNP NN PRP VBD
 6 6 6 6 6 6 2 
-1 6 1 6 1 6 2 
+1 6 6 6 6 6 2 
 My morning was great...no problems everything nice and quiet the way I like it
 PRP$ NN VBD JJ NNS NN JJ CC JJ DT NN PRP VBP PRP
 6 6 6 6 1 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 1 6 6 2 
+6 6 6 6 6 6 6 6 6 6 1 6 6 3 
 Now I know who you are talking about
 RB PRP VBP WP PRP VBP VBG IN
 6 6 6 6 6 6 6 2 
@@ -777,7 +777,7 @@ VB PRP VBG
 Well more and more I realize that my stress is all my boss' fault
 RB JJR CC JJR PRP VBP IN PRP$ NN VBZ DT PRP$ NN NN
 1 6 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 1 6 6 6 6 2 
+1 6 1 1 6 6 6 6 6 6 6 6 6 2 
 Anyways I think I just need to learn how to work with my new boss
 RB PRP VBP PRP RB VBP TO VB WRB TO VB IN PRP$ JJ NN
 1 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
@@ -785,15 +785,15 @@ RB PRP VBP PRP RB VBP TO VB WRB TO VB IN PRP$ JJ NN
 I need to come up with my own assumptions
 PRP VBP TO VB RP IN PRP$ JJ NNS
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 
 She's driving me nuts
 NNS VBG PRP NNS
 6 6 6 2 
-6 6 6 2 
+6 6 6 3 
 That and the fact that I had a long meeting this morning with your other buddy Chris Disable
 DT CC DT NN IN PRP VBD DT JJ NN DT NN IN PRP$ JJ NN NNP NNP
 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 1 6 2 
-6 6 6 6 1 6 6 6 6 1 6 6 6 6 6 1 6 2 
+6 6 6 1 6 6 6 6 6 6 6 1 6 6 6 1 1 2 
 I thought Bilal was still looking at the Enovate books
 PRP VBD NNP VBD RB VBG IN DT NNP NNS
 6 6 6 6 6 6 6 6 6 2 
@@ -805,15 +805,15 @@ NNS VBP IN PRP IN PRP VBP DT NNS
 Your User ID is enronrobin and your password is amerex
 PRP$ NNP NNP VBZ NN CC PRP$ NN VBZ NN
 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 1 6 6 1 6 2 
+6 1 6 6 6 6 6 6 6 2 
 Interesting though isn't it
 VBG IN NN PRP
 6 6 6 3 
-6 6 1 6 
+6 6 6 3 
 I think we're going to Lupe's
 PRP VBP RB VBG TO NNS
 6 6 6 6 6 2 
-6 6 6 6 6 2 
+6 6 6 6 6 3 
 You are invited if you want to come
 PRP VBP VBN IN PRP VBP TO VB
 6 6 6 6 6 6 6 2 
@@ -825,11 +825,11 @@ NNP RB VBD TO VB PRP VB
 I thought about you this weekend
 PRP VBD IN PRP DT NN
 6 6 6 6 6 2 
-6 6 6 1 6 2 
+6 6 6 6 6 2 
 I was going to bring you some but there weren't even crums left
 PRP VBD VBG TO VB PRP DT CC EX VBP RB NNS VBD
 6 6 6 6 6 6 1 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 2 
 Well I just wanted to brag
 RB PRP RB VBD TO VB
 1 6 6 6 6 2 
@@ -837,15 +837,15 @@ RB PRP RB VBD TO VB
 So I'll leave you alone
 IN NNP VBP PRP RB
 6 6 6 6 2 
-1 6 6 6 2 
+6 6 6 6 2 
 By the way how was your trip to Kinder
 IN DT NN WRB VBD PRP$ NN TO VB
 6 6 1 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 2 
+6 6 1 6 6 6 6 6 2 
 Did you have trouble finding the hotel or resturant
 VBD PRP VBP NN VBG DT NN CC NN
 6 6 6 6 6 6 6 6 3 
-6 6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 1 6 2 
 I'm glad to know he thinks you are worth something
 NN JJ TO VB PRP VBZ PRP VBP JJ NN
 6 6 6 6 6 6 6 6 6 2 
@@ -857,23 +857,23 @@ UH PRP VBD RB RB JJ TO VB JJ NN
 Oh here a highlight for your day
 UH RB DT NN IN PRP$ NN
 1 6 6 6 6 6 2 
-1 1 6 6 6 6 2 
+6 1 6 1 6 6 2 
 I forgot Binh has today off too
 PRP VBD NNP VBZ NN RP RB
 6 6 6 6 6 6 2 
-6 6 6 6 6 6 2 
+6 6 6 6 6 2 2 
 She won't be back until tomorrow so I have another two shift day...YUCK
 PRP VBD VB RB IN NN IN PRP VBP DT CD NN NN
 6 6 6 6 6 1 6 6 6 6 6 6 4 
-6 6 6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 2 
 Are we having Spanish class today
 VBP PRP VBG JJ NN NN
 6 6 6 6 6 3 
-6 6 6 6 6 2 
+6 6 1 6 6 3 
 I am sorry you did not get much sleep
 PRP VBP RB PRP VBD RB VB JJ NN
 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 2 
 He still thinks I am worth something
 PRP RB VBZ PRP VBP JJ NN
 6 6 6 6 6 6 2 
@@ -889,7 +889,7 @@ CC DT PRP VBP VB JJ NN JJ NN CC PRP VBD RB PRP$ NN
 Even after I went to bed I just kept waking up
 RB IN PRP VBD TO NN PRP RB VBD VBG RP
 6 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 1 6 6 6 6 2 
+1 1 6 6 6 1 6 6 6 6 2 
 I feel a little dazed but other than that I'm okay
 PRP VBP DT JJ JJ CC JJ IN DT JJ JJ
 6 6 6 6 6 6 6 6 6 6 2 
@@ -897,7 +897,7 @@ PRP VBP DT JJ JJ CC JJ IN DT JJ JJ
 Just kidding thank you very much anyways
 RB VBG VB PRP RB JJ NNS
 6 1 6 6 6 6 2 
-1 6 6 6 6 6 2 
+1 6 6 6 6 6 6 
 I felt bad I left really late last night
 PRP VBD JJ PRP VBD RB JJ JJ NN
 6 6 6 6 6 6 6 6 2 
@@ -909,27 +909,27 @@ PRP VBP PRP VBD DT JJ NN
 Glad you are back at work
 JJ PRP VBP RB IN NN
 6 6 6 6 6 3 
-1 6 6 6 6 2 
+6 6 6 6 6 2 
 Go Home and get some sleep so you can drive tomorrow
 NNP NNP CC VB DT NN IN PRP MD VB NN
 6 6 6 6 6 6 6 6 6 6 4 
-1 6 6 6 6 6 6 6 6 6 2 
+1 6 6 6 6 1 6 6 6 6 2 
 I can go home now
 PRP MD VB NN RB
 6 6 6 6 4 
-6 6 6 1 2 
+6 6 6 6 2 
 Well let me know if you need to do anything before we leave tomorrow
 RB VB PRP VB IN PRP VBP TO VB NN IN PRP VBP NN
 1 6 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 6 6 6 6 2 
+1 6 6 6 6 6 6 6 6 6 6 6 6 3 
 I can actually help you since I am pretty much done
 PRP MD RB VB PRP IN PRP VBP RB RB VBN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 Are you thinking that there's a problem with Canada's position
 VBP PRP VBG DT VBZ DT NN IN NNP NN
 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 1 6 6 3 
 Call me if any questions
 VB PRP IN DT NNS
 6 6 6 6 2 
@@ -941,55 +941,55 @@ RB PRP RB VBP NN TO DT NNP NN
 Also please let me know what trader is responsible for this position
 RB VBP VB PRP VB WP NN VBZ JJ IN DT NN
 1 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 6 6 6 2 
+1 6 6 6 6 6 6 6 6 6 6 2 
 Per Bilal they need to be done today
 IN NNP PRP VBP TO VB VBN NN
 6 1 6 6 6 6 6 2 
-6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 2 
 Can you further break it out by intramonth and term
 MD PRP RBR VB PRP RP IN NN CC NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 6 3 
 Are you still using the FTCD file
 VBP PRP RB VBG DT NNP NN
 6 6 6 6 6 6 3 
-6 6 6 6 1 6 2 
+6 6 6 6 6 6 3 
 If you are please let me know to what trader to assign the P&L
 IN PRP VBP VB VB PRP VB TO WP NN TO VB DT NN
 6 6 1 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 1 2 
 I spoke with Bilal
 PRP VBD IN NNP
 6 6 6 2 
-6 6 6 2 
+6 6 1 2 
 On Monday Bilal will give you a detail breakout of the deadline for Canada
 IN NNP NNP MD VB PRP DT NN NN IN DT NN IN NNP
 6 1 6 6 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 1 6 1 6 6 6 6 6 2 
+6 1 6 6 6 6 6 1 6 6 6 1 6 2 
 Regarding the the Canadian P&L report I left a message for Gillis to get the numbers out there
 VBG DT DT NNP NNP NN PRP VBD DT NN IN NNP TO VB DT NNS RB RB
 6 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 1 6 6 6 6 6 6 6 6 6 6 6 2 
+6 6 1 1 6 1 6 6 6 1 6 6 6 6 6 1 6 2 
 Hope this gives you an idea of our progress
 NNP DT VBZ PRP DT NN IN PRP$ NN
 6 6 6 6 6 6 6 6 2 
-1 6 6 1 6 6 6 6 2 
+6 6 6 6 6 1 6 6 2 
 I took care of the Executive Viewer
 PRP VBD NN IN DT NNP NNP
 6 6 6 6 6 6 2 
-6 6 6 6 1 6 2 
+6 6 6 6 1 1 2 
 I left a message for Kathy to call me
 PRP VBD DT NN IN NNP TO VB PRP
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 2 
+6 6 6 1 6 6 6 6 2 
 I think you have me confused with someone else
 PRP VBP PRP VBP PRP VBN IN NN RB
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 1 2 
+6 6 6 6 6 6 6 6 2 
 And as for my family and friends if you think you can stand them you're welcome to come along
 CC IN IN PRP$ NN CC NNS IN PRP VBP PRP MD VB PRP RB VBP TO VB RP
 6 6 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
 So you were serious about it
 RB PRP VBD JJ IN PRP
 1 6 6 6 6 3 
@@ -997,15 +997,15 @@ RB PRP VBD JJ IN PRP
 I really appreciate that you still keep me in mind and I apologize for not having told you anything
 PRP RB VBP IN PRP RB VB PRP IN NN CC PRP VBP IN RB VBG VBN PRP NN
 6 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 3 
 I am sure you probably need to know to plan ahead
 PRP VBP JJ PRP RB VBP TO VB TO VB RB
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 Have you thought any more about coming with me for Thanksgiving
 NNP PRP VBD DT RBR IN VBG IN PRP IN NNP
 6 6 6 6 6 6 6 6 6 6 3 
-1 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 I spent the most of the morning Wed on evaluations
 PRP VBD DT JJS IN DT NN VBD IN NNS
 6 6 6 6 6 6 6 2 6 2 
@@ -1017,7 +1017,7 @@ DT PRP VBD TO VB IN DT RB JJR IN NNS
 It all depends on how many comments you write
 PRP DT VBZ IN WRB JJ NNS PRP VBP
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 2 
 I'd love to see your shirt
 JJ NN TO VB PRP$ NN
 6 6 6 6 6 4 
@@ -1033,47 +1033,47 @@ VBZ IN PRP VBP DT JJ NN VBN
 I don't think I'm up to that kind of partying tonight
 PRP VBP VB NNP IN TO DT NN IN NN NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 1 6 6 2 
 I've actually finished the evaluations but I haven't submitted them yet
 NNP RB VBD DT NNS CC PRP VBP VBN PRP RB
 6 6 6 6 1 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 1 6 2 
+6 6 6 6 1 1 6 6 6 6 2 
 How late were you here last night
 WRB RB VBD PRP RB JJ NN
 6 6 6 6 6 6 3 
-6 6 6 6 6 6 2 
+6 6 6 6 6 6 3 
 How did everything turn out with your boss yesterday
 WRB VBD NN VB RP IN PRP$ NN NN
 6 6 6 6 6 6 6 6 3 
-6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 3 
 I am going to bring popcorn and a good CD
 PRP VBP VBG TO VB NN CC DT JJ NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 1 2 
+6 6 6 6 6 6 6 6 6 2 
 Robin - I have already added your name to my list
 NNP : PRP VBP RB VBN PRP$ NN TO PRP$ NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 When you have finished please return the file to me
 WRB PRP VBP VBN VB NN DT NN TO PRP
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 1 6 3 
 OTHERWISE MY ATTORNEY THINKS I HAVE A VERY GOOD CASE AND I'LL SEE YOUR ASS IN COURT
 NNP NNP NNP VBZ PRP VBP DT NNP NNP NN NNP NNP VB JJ NNP IN NNP
 1 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 4 
-1 6 6 1 6 1 6 1 6 1 6 1 6 1 6 6 2 
+1 1 1 6 1 1 1 1 1 1 1 1 1 1 1 6 2 
 I ALSO VOTED IN PALM BEACH COUNTY
 PRP RB VBD IN NNP NNP NNP
 6 6 6 6 6 6 2 
-6 1 6 6 1 6 2 
+6 1 6 1 1 1 2 
 What do you mean you're bidding for a company
 WP VBP PRP VB JJ NN IN DT NN
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 3 
 Are you writing the bid for your boss
 VBP PRP VBG DT NN IN PRP$ NN
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 2 
+6 6 6 6 1 6 6 3 
 And why would you be complaining
 CC WRB MD PRP VB VBG
 6 6 6 6 6 3 
@@ -1089,19 +1089,19 @@ PRP VBP PRP RB VBD TO VB DT NN
 Sorry it took me so long to reply we had a slight crisis here
 JJ PRP VBD PRP RB JJ TO VB PRP VBD DT JJ NN RB
 6 6 6 6 6 6 6 1 6 6 6 6 6 2 
-1 6 6 6 6 6 6 6 6 6 6 6 1 2 
+6 6 6 6 6 6 6 6 6 6 6 6 6 2 
 I couldn't send myself a net send
 PRP VBP VB PRP DT NN VB
 6 6 6 6 6 6 2 
-6 6 6 1 6 6 2 
+6 6 6 6 6 1 2 
 Try sending yourself a message to see what happens
 VB VBG PRP DT NN TO VB WP VBZ
 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 2 
+6 6 6 6 1 6 6 6 2 
 Have you kept up with any new information about Risk people
 NNP PRP VBD RP IN DT JJ NN IN NNP NNS
 6 6 6 6 6 6 6 6 6 6 3 
-1 6 6 6 6 6 6 6 6 6 3 
+6 6 6 6 6 6 6 6 6 6 3 
 You know what I mean right
 PRP VBP WP PRP VBP RB
 6 6 6 6 6 3 
@@ -1109,15 +1109,15 @@ PRP VBP WP PRP VBP RB
 Glad it worked now maybe you won't get fired
 JJ PRP VBD RB RB PRP VBP VB VBN
 6 6 1 6 6 6 6 6 2 
-1 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 2 
 Have you gotten something to eat yet
 VBP PRP VBN NN TO VB RB
 6 6 6 6 6 6 3 
-6 6 6 6 6 6 2 
+6 6 6 6 6 6 3 
 I finally just built an EES report in the Basis report
 PRP RB RB VBN DT NNP NN IN DT NN NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 1 6 2 
+6 6 6 6 1 6 6 6 1 1 2 
 This will get me brownie points right
 DT MD VB PRP VB NNS RB
 6 6 6 6 6 1 3 
@@ -1125,7 +1125,7 @@ DT MD VB PRP VB NNS RB
 Please note my new location
 VB NN PRP$ JJ NN
 6 6 6 6 2 
-6 1 6 6 2 
+6 6 6 6 2 
 Please let me have this information as quickly as possible
 VB VB PRP VB DT NN RB RB IN JJ
 6 6 6 6 6 6 6 6 6 2 
@@ -1137,15 +1137,15 @@ PRP RB VBP PRP VBD RB RB RB
 Unfortunately that isn't nearly the most irritating thing that he does
 RB DT NN RB DT RBS JJ NN IN PRP VBZ
 6 6 6 6 6 6 6 6 6 6 2 
-1 6 1 1 6 6 6 6 6 6 2 
+1 6 1 6 6 6 6 6 6 6 2 
 I'll update you as he provides me with more stories
 RB VB PRP IN PRP VBZ PRP IN JJR NNS
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 2 
+1 6 6 6 6 6 6 6 6 2 
 It's a lot more popular there than it is here
 VBZ DT NN RBR JJ RB IN PRP VBZ RB
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 2 
+6 6 1 6 6 1 6 6 6 2 
 And they eat meat pies...yuck
 CC PRP VBP NN NN
 6 6 6 6 2 
@@ -1153,7 +1153,7 @@ CC PRP VBP NN NN
 I saw quite a few good looking guys
 PRP VBD RB DT JJ JJ VBG NNS
 6 6 6 6 6 6 6 2 
-6 6 1 6 6 1 6 2 
+6 6 6 6 6 6 6 2 
 I do have specific questions about Australia though
 PRP VBP VB JJ NNS IN NNP IN
 6 6 6 6 6 6 6 2 
@@ -1161,11 +1161,11 @@ PRP VBP VB JJ NNS IN NNP IN
 What do they eat
 WP VBP PRP VB
 6 6 6 3 
-6 6 6 2 
+6 6 6 3 
 What did you eat
 WP VBD PRP VB
 6 6 6 3 
-6 6 6 2 
+6 6 6 3 
 Did you make them speak just to hear the accent
 VBD PRP VBP PRP VB RB TO VB DT NN
 6 6 6 6 6 6 6 6 6 3 
@@ -1181,19 +1181,19 @@ NNP VBD PRP$ NN NN
 I just had a couple more miles
 PRP RB VBD DT NN JJR NNS
 6 6 6 6 6 6 2 
-6 6 6 6 6 6 2 
+6 6 6 6 1 6 2 
 I can walk this morning but my legs are fatigued
 PRP MD VB DT NN CC PRP$ NNS VBP VBN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 2 
+6 6 6 6 1 6 6 1 6 2 
 Too bad you can't see and hear me moan
 RB JJ PRP VBP VB CC VB PRP VB
 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 6 6 2 
+1 6 6 6 6 6 6 6 2 
 I'll just write it a couple of times
 RB RB VB PRP DT NN IN NNS
 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 2 
+1 6 6 6 6 1 6 2 
 You know I think Ann is going to Michigan so it'll just be me
 PRP VBP PRP VBP NNP VBZ VBG TO NNP RB RB RB VB PRP
 6 1 6 6 6 6 6 6 1 6 6 6 6 2 
@@ -1201,7 +1201,7 @@ PRP VBP PRP VBP NNP VBZ VBG TO NNP RB RB RB VB PRP
 Maybe I'll just stay home and stuff my face
 RB NNP RB VB NN CC VB PRP$ NN
 6 6 6 6 6 6 6 6 2 
-1 6 6 6 1 6 6 6 2 
+1 6 6 6 6 6 6 6 2 
 I sure do love that kid
 PRP RB VBP VB DT NN
 6 6 6 6 6 2 
@@ -1209,27 +1209,27 @@ PRP RB VBP VB DT NN
 I have attached the move request below
 PRP VBP VBN DT NN NN IN
 6 6 6 6 6 6 2 
-6 6 1 6 1 6 2 
+6 6 6 6 1 6 2 
 What do we need to change to correct that problem
 WP VBP PRP VB TO VB TO VB DT NN
 6 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 3 
 If you need any more information let me know
 IN PRP VBP DT JJR NN VB PRP VB
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 2 
 Do you know anything about the Congress Plaza Hotel
 VBP PRP VB NN IN DT NNP NNP NNP
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 1 1 1 3 
 Relative to most of the questions I answer all day your questions don't even count as stupid
 JJ TO JJS IN DT NNS PRP VBP DT NN PRP$ NNS VBP RB NN IN JJ
 6 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 4 
-6 6 6 6 6 1 6 6 6 1 6 6 6 6 6 6 2 
+6 6 1 6 6 1 6 6 6 1 6 1 6 6 6 6 2 
 B PS How many stupid questions do you get every day
 NNP NNP WRB JJ JJ NNS VBP PRP VB DT NN
 6 6 6 6 6 6 6 6 6 6 3 
-1 6 6 6 6 6 6 6 6 6 2 
+1 1 6 6 6 6 6 6 6 6 2 
 Did you have something good today
 VBD PRP VBP NN JJ NN
 6 6 6 6 6 3 
@@ -1237,7 +1237,7 @@ VBD PRP VBP NN JJ NN
 What should I give up for lent
 WP MD PRP VB RP IN VBN
 6 6 6 6 6 6 3 
-6 1 6 6 6 6 4 
+6 1 6 6 6 6 3 
 I couldn't open this
 PRP VBP JJ DT
 6 6 6 2 
@@ -1253,23 +1253,23 @@ PRP VBP DT NN
 I never told you about my trip did I
 PRP RB VBD PRP IN PRP$ NN VBD PRP
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 3 
 The crowd was soooo wild...that is until we won
 DT NN VBD JJ NN VBZ IN PRP VBD
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 2 
+6 1 6 6 6 6 6 6 2 
 And I got to see Cathy Freeman and Marion Jones run
 CC PRP VBD TO VB NNP NNP CC NNP NNP NN
 6 6 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 1 6 6 1 6 2 
+1 6 6 6 1 1 6 6 6 6 2 
 Oh here's a funny story for you
 UH VBZ DT JJ NN IN PRP
 1 6 6 6 6 6 2 
-1 6 6 6 6 6 2 
+6 6 6 6 6 6 2 
 I was on a boat full of grandpa's
 PRP VBD IN DT NN JJ IN NNS
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+6 6 6 6 1 6 6 2 
 Actually it was pretty funny
 RB PRP VBD RB JJ
 6 6 6 6 2 
@@ -1281,11 +1281,11 @@ RB PRP VBZ VBG PRP IN DT NN
 I hope one day I have stories even half that interesting
 PRP VBP CD NN PRP VBP NNS RB PDT DT JJ
 6 6 6 6 6 6 6 6 6 6 4 
-6 6 6 1 6 6 6 2 1 6 2 
+6 6 6 1 6 6 6 6 6 6 2 
 How's everything going at your house
 NNS NN VBG IN PRP$ NN
 6 6 6 6 6 3 
-6 1 6 6 6 2 
+6 6 6 6 6 2 
 Here is the activity breakout that we discussed
 RB VBZ DT NN NN IN PRP VBD
 6 6 6 6 6 6 6 2 
@@ -1293,35 +1293,35 @@ RB VBZ DT NN NN IN PRP VBD
 If you need more detailed information please give me a call
 IN PRP VBP RBR JJ NN VBP VB PRP DT NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 Besides I already had my luggage allotment
 IN PRP RB VBD PRP$ NN NN
 6 6 6 6 6 6 2 
-1 6 6 6 6 6 2 
+6 6 6 6 6 6 2 
 My box wasn't nearly as heavy as yours is
 PRP$ NN NN RB RB JJ IN NNS VBZ
 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 2 
 What kind of tree did you buy
 WP NN IN NN VBD PRP VB
 6 6 6 6 6 6 3 
-6 6 6 6 6 6 2 
+6 6 6 6 6 6 3 
 What is it an iron statue of a tree
 WP VBZ PRP DT NN NN IN DT NN
 6 6 6 6 6 6 6 6 3 
-6 6 1 6 1 6 6 6 2 
+6 6 6 6 1 6 6 6 3 
 Are you leaving tomorrow
 VBP PRP VBG NN
 6 6 6 3 
-6 6 6 2 
+6 6 6 3 
 I know I've asked you this before but I can't remember
 PRP VBP NNP VBD PRP DT IN CC PRP RB VBP
 6 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 1 6 6 1 6 6 2 
+6 1 6 6 6 6 6 1 6 6 2 
 If you don't have any plans let's go to lunch
 IN PRP VBP VB DT NNS NNS VBP TO VB
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 1 1 6 6 2 
 I have a few questions for you
 PRP VBP DT JJ NNS IN PRP
 6 6 6 6 6 6 2 
@@ -1329,7 +1329,7 @@ PRP VBP DT JJ NNS IN PRP
 Why did you not take it with you
 WRB VBD PRP RB VB PRP IN PRP
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 3 
 I called Continental and they said they would accept it
 PRP VBD NNP CC PRP VBD PRP MD VB PRP
 6 6 6 6 6 6 6 6 6 2 
@@ -1345,11 +1345,11 @@ RB PRP VBZ RB JJ IN PRP VBD RB VBN IN PRP$ NN
 I had to take it home with the trunk open
 PRP VBD TO VB PRP NN IN DT NN NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 1 2 
 Anyways I hope I can see you before I leave for Mexico
 RB PRP VBP PRP MD VB PRP IN PRP VBP IN NNP
 1 6 6 6 6 6 6 6 6 6 6 2 
-1 6 1 6 6 6 6 1 6 6 6 2 
+1 6 1 6 6 6 6 6 6 6 6 2 
 I probably just drop by and say bye
 PRP RB RB VB IN CC VB NN
 6 6 6 6 6 6 6 2 
@@ -1357,31 +1357,31 @@ PRP RB RB VB IN CC VB NN
 I'll let you know about the whole EBS thing
 NNP VBD PRP VBP IN DT JJ NNP NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 2 
 I'll send it tomorrow I promise
 RB VB PRP NN PRP VBP
 6 6 6 6 6 2 
-6 6 6 1 6 2 
+1 6 6 1 6 2 
 Sorry to hear about your airport travels
 JJ TO VB IN PRP$ NN NNS
 6 6 6 6 6 6 2 
-6 6 6 6 6 6 2 
+6 6 6 6 6 6 3 
 When is she starting on the east desk...they need help
 WRB VBZ PRP VBG IN DT JJ JJ NN NN
 6 6 6 6 6 6 6 6 6 4 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 3 
 They screwed their position up again today
 PRP VBD PRP$ NN RP RB NN
 6 6 6 6 6 6 2 
-6 6 6 6 6 6 2 
+6 6 6 6 2 6 2 
 Of course it could have been better without the rain
 IN NN PRP MD VB VBN JJR IN DT NN
 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 So we spent most of Sunday afternoon playing with the baby
 RB PRP VBD JJS IN NNP NN NN IN DT NN
 6 6 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 6 1 6 6 6 2 
+1 6 6 1 1 6 6 6 6 6 2 
 He was talking about the baby monitors they got
 PRP VBD VBG IN DT NN VBZ PRP VBD
 6 6 6 6 6 6 6 6 2 
@@ -1393,7 +1393,7 @@ DT VBZ PRP$ NNS
 Yeah but you know I can't resist an opportunity to make a sarcastic remark
 UH CC PRP VBP PRP RB VBP DT NN TO VB DT JJ NN
 1 6 6 6 6 6 6 6 6 6 6 6 6 2 
-1 6 6 1 6 6 6 6 6 6 6 6 6 2 
+1 6 6 1 6 6 6 6 1 6 6 6 6 2 
 Yeahh.I think you are better off there
 NNS VBP PRP VBP JJR IN EX
 6 6 6 6 6 6 2 
@@ -1405,7 +1405,7 @@ RB PRP VBP RB VB DT NN
 I was asking what you thought about the whole EBS thing not about my nervousness
 PRP VBD VBG WP PRP VBD IN DT JJ NNP NN RB IN PRP$ NN
 6 6 6 6 6 6 6 6 6 6 1 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 1 6 6 6 2 
+6 6 6 1 6 6 6 6 6 6 6 6 6 6 2 
 I think that's kind of funny
 PRP VBP JJ NN IN JJ
 6 6 6 6 6 4 
@@ -1413,15 +1413,15 @@ PRP VBP JJ NN IN JJ
 As for the rotation I wouldn't exactly say I know Brian but I met him at the Morton's dinner
 IN IN DT NN PRP VBP RB VBP PRP VBP NNP CC PRP VBD PRP IN DT NNP NN
 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 1 6 1 6 1 6 6 6 6 1 6 2 
+6 6 6 1 6 6 6 6 6 1 6 6 6 6 6 6 1 6 2 
 Well actually I might know Ibrahim's friend
 RB RB PRP MD VB NNP NN
 6 1 6 6 6 6 2 
-6 1 6 6 1 6 2 
+1 1 6 6 6 6 2 
 Do you know Brian Hoskins
 VBP PRP VBP NNP NNP
 6 6 6 6 3 
-6 6 1 6 2 
+6 6 1 6 3 
 If not I know him well
 IN RB PRP VBP PRP RB
 6 1 6 6 6 2 
@@ -1433,15 +1433,15 @@ RB PRP VBZ IN DT NN
 He can tell us what it is about
 PRP MD VB PRP WP PRP VBZ IN
 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 2 
 If not we can just go trhough Ibrahim
 IN RB PRP MD RB VB JJ NNP
 6 1 6 6 6 6 6 2 
-6 1 6 6 6 6 1 6 
+6 6 6 6 6 6 1 4 
 Uppsss I feel I have SOOOOO Much to learn
 NNP PRP VBP PRP VBP VBN RB TO VB
 6 6 6 6 6 6 6 6 2 
-1 6 1 6 6 1 6 6 2 
+1 6 1 6 1 6 6 6 2 
 I really feel behind
 PRP RB VBP IN
 6 6 6 2 
@@ -1449,15 +1449,15 @@ PRP RB VBP IN
 You never responded me
 PRP RB VBD PRP
 6 6 6 2 
-6 6 6 2 
+6 6 6 3 
 Ok ok maybe you do not want to go
 FW FW RB PRP VBP RB VB TO VB
 1 1 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 2 
+1 6 2 6 6 6 6 6 2 
 Don't deny it
 NNP VBP PRP
 6 6 2 
-6 6 2 
+6 6 3 
 I know you too well
 PRP VBP PRP RB RB
 6 6 6 6 2 
@@ -1465,7 +1465,7 @@ PRP VBP PRP RB RB
 So where are we going to watch the game
 RB WRB VBP PRP VBG TO VB DT NN
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 2 
+1 6 6 6 6 6 6 6 2 
 Tell him I'm definitely interested
 VB PRP VB RB JJ
 6 6 6 6 2 
@@ -1477,7 +1477,7 @@ VBP PRP VBG TO VB RP NNS CC NNS CC WP
 I don't think most people would understand the humor but I thought it was really funny
 PRP VBP VB JJS NNS MD VB DT NN CC PRP VBD PRP VBD RB JJ
 6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 6 6 6 6 6 2 
+6 6 6 6 3 6 6 6 1 6 6 6 6 6 6 2 
 I just sent and email to two AA people
 PRP RB VBD CC NN TO CD NNP NNS
 6 6 6 6 6 6 6 6 2 
@@ -1485,35 +1485,35 @@ PRP RB VBD CC NN TO CD NNP NNS
 Have they let you out of orientation yet
 VBP PRP VB PRP IN IN NN RB
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 1 2 
+6 6 6 6 6 6 6 3 
 How did your meeting go
 WRB VBD PRP$ NN VB
 6 6 6 6 3 
-6 6 6 6 2 
+6 6 6 6 3 
 I've attached the Gas Bench Porfolio that we discussed
 NNP VBD DT NNP NNP NNP IN PRP VBD
 6 6 6 6 6 6 6 6 2 
-6 6 1 6 1 6 6 6 2 
+6 6 6 1 1 6 6 6 2 
 If you need any more information just let me know
 IN PRP VBP DT JJR NN RB VB PRP VB
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 I have assumed the responsibility for publishing the Gas Reports
 PRP VBP VBN DT NN IN VBG DT NNP NNP
 6 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 1 6 2 
+6 6 6 6 1 6 6 6 1 2 
 When you fall...I will point and laugh at your clumsy butt
 WRB PRP NNP MD VB CC NN IN PRP$ JJ NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 This is my oath.....I pledge this till the end
 DT VBZ PRP$ NNP NN DT IN DT NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 2 
 Why do you always get him started
 WRB VBP PRP RB VB PRP VBD
 6 6 6 6 6 6 3 
-6 6 6 6 6 6 2 
+6 6 6 6 6 6 3 
 Thursday sounds good to me
 NNP VBZ JJ TO PRP
 6 6 6 6 2 
@@ -1521,19 +1521,19 @@ NNP VBZ JJ TO PRP
 Thursday it is
 NNP PRP VBZ
 6 6 2 
-1 6 2 
+6 6 2 
 Mark my word
 NNP PRP$ NN
 6 6 4 
-1 6 2 
+6 6 2 
 Hey Dawn I noticed there were a few people from the group missing from your email
 NNP NNP PRP VBD EX VBD DT JJ NNS IN DT NN VBG IN PRP$ NN
 1 6 6 6 6 6 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 6 6 6 6 6 1 6 6 6 2 
+1 1 6 6 6 6 6 6 6 6 6 1 6 6 6 2 
 Did you want me to forward it to them
 VBD PRP VBP PRP TO RB PRP TO PRP
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 2 
 Thursday or Friday sounds good to me
 NNP CC NNP VBZ JJ TO PRP
 6 6 6 6 6 6 2 
@@ -1541,7 +1541,7 @@ NNP CC NNP VBZ JJ TO PRP
 I also need to take Thurs
 PRP RB VBP TO VB NNS
 6 6 6 6 6 2 
-6 6 6 6 6 2 
+6 6 6 6 1 3 
 Please let me know soon
 VB VB PRP VB RB
 6 6 6 6 2 
@@ -1553,47 +1553,47 @@ NN VBZ JJ TO PRP
 Name a day and chances are I can make it
 NN DT NN CC NNS VBP PRP MD VB PRP
 6 6 6 6 6 6 6 6 6 2 
-1 6 1 6 6 1 6 6 6 2 
+6 6 1 6 6 1 6 6 6 2 
 See you in two weeks
 VB PRP IN CD NNS
 6 6 6 6 2 
-6 6 6 6 2 
+6 6 6 6 3 
 And Anne...well I can't even explain that
 CC NNP PRP VBP RB VB IN
 6 6 6 6 6 6 2 
-6 1 6 6 6 6 2 
+1 6 6 6 6 6 2 
 Let me digress for just a moment to talk about work
 VB PRP VB IN RB DT NN TO VB IN NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 1 6 6 6 2 
 It seems we took too much as broker fees in July
 PRP VBZ PRP VBD RB RB IN NN NNS IN NNP
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 I'm sure I'm not telling you anything you don't know
 JJ JJ NN RB VBG PRP NN PRP VBP VB
 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 1 6 6 2 
+6 1 6 6 6 6 6 6 6 2 
 Hope you enjoyed your trip
 NNP PRP VBD PRP$ NN
 6 6 6 6 2 
-1 6 6 6 2 
+6 6 6 6 2 
 I just got you email but I do want to be in on the gift for Becky
 PRP RB VBD PRP VBP CC PRP VBP VB TO VB RP IN DT NN IN NNP
 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 1 1 6 6 6 6 6 6 6 6 1 6 2 
 Where are you located now
 WRB VBP PRP VBN RB
 6 6 6 6 3 
-6 6 6 6 2 
+6 6 6 6 3 
 I'm not here...at least my mind anyway
 NNP RB VBD JJS PRP$ NN RB
 6 6 6 6 6 6 2 
-6 6 6 6 6 1 2 
+6 6 6 1 2 6 2 
 I take it you aren't too busy today
 PRP VBP PRP PRP VBP RB JJ NN
 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 6 2 
 Sorry I missed you guys for lunch yesterday
 JJ PRP VBD PRP NNS IN NN NN
 6 6 6 6 6 6 6 2 
@@ -1605,19 +1605,19 @@ PRP VBP VB PRP$ NN IN NN NN
 I've been in class for two days...Derivatives I
 RB VBN IN NN IN CD NNS PRP
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 
+1 6 6 6 6 6 1 2 
 PS If I forget my bras I'm just not going to bother
 NNP IN PRP VBP PRP$ FW FW RB RB VBG TO VB
 6 6 6 6 6 1 6 6 6 6 6 4 
-6 1 6 6 6 1 6 6 6 6 6 2 
+1 6 6 6 6 1 6 2 6 6 6 2 
 No one would notice if I forgot my bras
 DT NN MD VB IN PRP VBD PRP$ NNS
 6 6 6 6 6 6 6 6 4 
-6 1 6 6 1 6 6 6 2 
+6 1 6 6 6 6 6 6 2 
 I'll take lots of pictures so you can see them
 JJ NN NNS IN NNS IN PRP MD VB PRP
 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 I no longer need to receive Hyperion updates
 PRP RB RB VB TO VB NNP NNS
 6 6 6 6 6 6 6 2 
@@ -1625,7 +1625,7 @@ PRP RB RB VB TO VB NNP NNS
 I'll have my phone with me in case anyone needs anything
 NNP VBP PRP$ NN IN PRP IN NN NN VBZ NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 I will be in class Tuesday and Wednesday
 PRP MD VB IN NN NNP CC NNP
 6 6 6 6 6 6 6 2 
@@ -1637,15 +1637,15 @@ PRP VBD IN PRP CD WRB PRP VBP DT
 Okay here's a trivia question for you
 UH VBZ DT NNS NN IN PRP
 1 6 6 6 6 6 2 
-1 6 6 6 6 6 2 
+6 6 6 1 6 6 2 
 Do you see the absurdity of our lives
 VBP PRP VB DT NN IN PRP$ NNS
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 3 
+6 6 6 6 1 6 6 3 
 I don't know anyone over level II
 PRP VBP VB NN IN NN NNP
 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 
+6 6 6 6 6 1 2 
 I never did get to swim though
 PRP RB VBD VB TO VB IN
 6 6 6 6 6 1 2 
@@ -1653,11 +1653,11 @@ PRP RB VBD VB TO VB IN
 Of course there was none at the airport so officially it didn't rain yesterday
 IN NN EX VBD NN IN DT NN RB RB PRP JJ NN NN
 6 6 6 6 6 6 6 1 6 6 6 6 6 2 
-6 1 6 6 6 6 6 1 6 1 6 6 6 2 
+6 6 6 6 6 6 6 1 6 6 6 6 6 2 
 When do you leave for Australia
 WRB VBP PRP VB IN NNP
 6 6 6 6 6 2 
-6 6 6 6 6 2 
+6 6 6 6 6 3 
 Bring me back something nice
 VBG PRP RB NN JJ
 6 6 6 6 2 
@@ -1665,7 +1665,7 @@ VBG PRP RB NN JJ
 It sounds like a really fun job and they made an offer I can't turn down
 PRP VBZ IN DT RB NN NN CC PRP VBD DT NN PRP VBP VB RP
 6 6 6 6 6 6 1 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 1 6 6 6 2 
 Glad to hear you haven't dried up and blown away
 JJ TO VB PRP RB VBD RP CC VBN RB
 6 6 6 6 6 6 6 6 6 2 
@@ -1673,19 +1673,19 @@ JJ TO VB PRP RB VBD RP CC VBN RB
 They said we got rain here but being from LA I say we got a little drizzle
 PRP VBD PRP VBD NN RB CC VBG IN NNP PRP VBP PRP VBD DT JJ NN
 6 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 1 6 6 6 1 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 6 6 1 6 6 6 6 6 6 2 
 I have two right now
 PRP VBP CD RB RB
 6 6 6 6 2 
-6 6 6 6 2 
+6 6 6 2 2 
 I leave for Sydney a week from Saturday
 PRP VBP IN NNP DT NN IN NNP
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 2 
 And you're right there's no hope for keeping me in line
 CC VB JJ NNS DT NN IN VBG PRP IN NN
 6 6 6 6 6 6 6 6 6 6 4 
-6 6 6 1 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 6 6 6 2 
 I think I'll just retire early and stay over there
 PRP VBP NNP RB VBP JJ CC VB IN EX
 6 6 6 6 6 6 6 6 6 2 
@@ -1697,35 +1697,35 @@ PRP MD VB DT RB JJ NN NN
 I don't seem to own casual clothes anymore...especially not spring clothes
 PRP VBP VBP TO VB JJ NNS RB RB NN NNS
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 3 
 I'm going to have to pack everything I own
 NN VBG TO VB TO VB NN PRP VBP
 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 1 6 2 
 Are you trying to make me blind like you
 VBP PRP VBG TO VB PRP JJ IN PRP
 6 6 6 6 6 6 6 6 3 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 3 
 I'm hoping they have good movies on the flight
 NN VBG PRP VBP JJ NNS IN DT NN
 6 6 6 6 6 6 6 6 4 
-1 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 2 
 I think I must have become a little annoying myself
 PRP VBP PRP MD VB VBN DT JJ VBG PRP
 6 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 1 6 1 6 2 
+6 1 6 6 6 6 6 6 6 2 
 I'll take your Visa
 RB VB PRP$ NNP
 6 6 6 2 
-6 6 6 2 
+1 6 6 2 
 Just let me know when you've mailed it
 RB VB PRP VB WRB NNP VBD PRP
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+1 6 6 6 6 6 6 3 
 It's nice to know I have good tastes
 NNS JJ TO VB PRP VBP JJ NNS
 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 2 
+6 6 6 1 6 6 6 6 
 I decided to let you use them
 PRP VBD TO VB PRP VB PRP
 6 6 6 6 6 6 2 
@@ -1733,39 +1733,39 @@ PRP VBD TO VB PRP VB PRP
 It's too hot up here to use them
 NNS RB JJ RB RB TO VB PRP
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+6 6 6 1 6 6 6 2 
 Maybe if it ever rains
 RB IN PRP RB NNS
 6 6 6 6 2 
-6 6 6 6 2 
+1 6 6 6 2 
 You did a very good job picking it out
 PRP VBD DT RB JJ NN VBG PRP RP
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 2 
 I actually went to the driving range this weekend
 PRP RB VBD TO DT JJ NN DT NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 2 
 I definitely think I could get hooked on this sport
 PRP RB VBP PRP MD VB VBN IN DT NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 Did I tell you I'm working daylight hours again
 VBD PRP VBP PRP VBP VBG NN NNS RB
 6 6 6 6 6 6 6 6 3 
-1 6 6 1 6 6 1 1 2 
+6 6 6 1 6 6 6 6 2 
 I thought you'd appreciate this email from my brother
 PRP VBD RB VB DT NN IN PRP$ NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 6 2 
 Mom call the other day and thanked me for her present
 NN VBP DT JJ NN CC VBD PRP IN PRP$ NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 What did I get her
 WP VBD PRP VB PRP
 6 6 6 6 3 
-6 1 6 6 2 
+6 1 6 6 3 
 How much did you pay for your clubs
 WRB RB VBD PRP VB IN PRP$ NNS
 6 6 6 6 6 6 6 3 
@@ -1773,7 +1773,7 @@ WRB RB VBD PRP VB IN PRP$ NNS
 By the way I thought using company email was a nice touch
 IN DT NN PRP VBD VBG NN NN VBD DT JJ NN
 6 6 1 6 6 6 6 6 6 6 6 2 
-6 6 1 6 6 6 1 6 6 6 6 2 
+6 6 1 6 6 6 6 6 6 6 6 2 
 Both of my machines
 DT IN PRP$ NNS
 6 6 6 2 
@@ -1781,23 +1781,23 @@ DT IN PRP$ NNS
 So are you going to enter
 RB VBP PRP VBG TO VB
 6 6 6 6 6 3 
-6 6 6 6 6 2 
+1 6 6 6 6 2 
 I hope this explanation makes sense and is acceptable
 PRP VBP DT NN VBZ NN CC VBZ JJ
 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 1 6 6 2 
+6 6 6 1 6 6 6 6 2 
 How scandulous of your mother
 WRB JJ IN PRP$ NN
 6 6 6 6 4 
-6 6 6 6 2 
+6 6 6 6 3 
 I was completely shocked...I didn't even know what to say
 PRP VBD RB JJ NN RB VBP WP TO VB
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 I know it's hard to imagine me speechless but I was
 PRP VBP RB JJ TO VB PRP JJ CC PRP VBD
 6 6 6 6 6 6 6 1 6 6 2 
-6 6 6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 1 6 2 
 Let me know if you want to go to lunch
 VB PRP VB IN PRP VBP TO VB TO NN
 6 6 6 6 6 6 6 6 6 2 
@@ -1805,7 +1805,7 @@ VB PRP VB IN PRP VBP TO VB TO NN
 I'll call you when I get in
 NN NN PRP WRB PRP VBP IN
 6 6 6 6 6 6 2 
-6 1 6 1 6 6 2 
+6 6 6 1 6 6 2 
 Therefore I don't believe it should be included in the POS-GAS-TRD portfolio
 RB PRP VBP VBP PRP MD VB VBN IN DT NNP NN
 1 6 6 6 6 6 6 6 6 6 6 2 
@@ -1817,7 +1817,7 @@ PRP VBD NN JJ NN IN PRP$ JJ NN
 If I get any good family emails I'll let you know
 IN PRP VBP DT JJ NN VBZ NNP VB PRP VB
 6 6 6 6 6 6 6 6 6 6 4 
-1 6 6 6 6 6 1 6 6 6 2 
+6 6 6 6 6 6 1 6 6 6 2 
 I will not be able to attend this meeting
 PRP MD RB VB JJ TO VB DT NN
 6 6 6 6 6 6 6 6 2 
@@ -1825,11 +1825,11 @@ PRP MD RB VB JJ TO VB DT NN
 I thought you'd appreciate the humor in these
 PRP VBD RB VB DT NN IN DT
 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 2 
 Hell I thought Billy Graham was some singer or something
 NN PRP VBD NNP NNP VBD DT NN CC NN
 1 6 6 6 6 6 6 6 6 2 
-1 6 6 1 6 6 6 6 6 2 
+1 6 6 1 6 6 6 1 6 2 
 I will be attending the dinner
 PRP MD VB VBG DT NN
 6 6 6 6 6 2 
@@ -1837,23 +1837,23 @@ PRP MD VB VBG DT NN
 I have not taken any time off this time period
 PRP VBP RB VBN DT NN IN DT NN NN
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 1 6 6 1 2 
 Yes I got it a few minutes after I sent you the email
 RB PRP VBD PRP DT JJ NNS IN PRP VBD PRP DT NN
 1 6 6 6 6 6 6 6 6 6 6 6 2 
-1 6 6 1 6 6 6 1 6 6 1 6 2 
+1 6 6 6 6 6 6 6 6 6 6 6 2 
 Are you still working on the CanadaPower file
 VBP PRP RB VBG IN DT NNP NN
 6 6 6 6 6 6 6 3 
-6 6 6 6 6 1 6 2 
+6 6 6 6 6 1 6 3 
 She's been drinking the water here hasn't she
 NNS VBN VBG DT NN RB VBZ PRP
 6 6 6 6 6 1 6 3 
-6 1 6 6 1 6 6 2 
+6 6 6 6 1 6 6 2 
 There was at least a third of it left but it's in the trash now
 EX VBD IN JJS DT JJ IN PRP VBD CC NNS IN DT NN RB
 6 6 6 6 6 6 6 6 1 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 6 6 6 6 6 1 2 
+6 6 6 6 1 6 6 6 6 6 6 6 6 1 2 
 You're welcome to come get it
 NNS VBP TO VB VB PRP
 6 6 6 6 6 2 
@@ -1865,7 +1865,7 @@ VBZ PRP$ JJ NN
 That was a really lame joke...in fact it was pathetic
 DT VBD DT RB JJ NN NN PRP VBD JJ
 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 Well I feel privileged to be included in your daily entertainment
 RB PRP VBP JJ TO VB VBN IN PRP$ JJ NN
 6 6 6 6 6 6 6 6 6 6 2 
@@ -1881,7 +1881,7 @@ PRP VBD DT NN
 That's all well and good but where are my text files
 NNS RB RB CC JJ CC WRB VBP PRP$ NN NNS
 6 6 6 6 1 6 6 6 6 6 3 
-6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 1 6 6 6 6 6 3 
 No I promise I didn't...your post-id crashed my system
 DT PRP VBP PRP VBP JJ VBD PRP$ NN
 6 6 6 6 6 6 6 6 2 
@@ -1889,19 +1889,19 @@ DT PRP VBP PRP VBP JJ VBD PRP$ NN
 We're going again though so I should have your position in a few minutes
 VB VBG RB IN RB PRP MD VB PRP$ NN IN DT JJ NNS
 6 6 6 1 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 1 6 6 6 6 6 6 6 6 2 
+6 6 6 6 1 6 6 6 6 6 6 6 6 6 
 I would like to attend the Cornell Brown Bag
 PRP MD VB TO VB DT NNP NNP NNP
 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 1 1 1 2 
 I'm having to plug your positions again
 NN VBG TO VB PRP$ NNS RB
 6 6 6 6 6 6 2 
-1 6 6 6 6 6 2 
+6 6 6 6 6 1 2 
 I'll talk to you tomorrow
 JJ NN TO PRP NN
 6 6 6 6 2 
-6 6 6 6 2 
+6 6 6 1 3 
 Let me guess all the time
 VB PRP VB PDT DT NN
 6 6 1 6 6 2 
@@ -1909,7 +1909,7 @@ VB PRP VB PDT DT NN
 Have you tried talking that way to her
 NNP PRP VBD VBG DT NN TO PRP$
 6 6 6 6 6 6 6 3 
-1 6 6 6 6 6 6 2 
+6 6 6 6 6 1 6 3 
 Let me know what happens
 VB PRP VB WP VBZ
 6 6 6 6 2 
@@ -1921,7 +1921,7 @@ PRP VBP NNP VB DT NN DT NN
 Here's the book request I spoke with you about
 VBZ DT NN NN PRP VBD IN PRP IN
 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 2 
+6 6 1 1 6 6 6 6 2 
 Please let me know when this book is set up
 VB VB PRP VB WRB DT NN VBZ VBN RP
 6 6 6 6 6 6 6 6 6 2 
@@ -1929,19 +1929,19 @@ VB VB PRP VB WRB DT NN VBZ VBN RP
 I'm not in accounting any more so I no longer need this email
 NN RB IN VBG DT JJR IN PRP RB RB VB DT NN
 6 6 6 6 6 1 6 6 6 6 6 6 2 
-6 6 6 6 6 6 1 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 6 6 6 2 
 I promise I didn't forget about you tonight
 PRP VBP PRP VBP VB IN PRP NN
 6 6 6 6 6 6 6 4 
-6 1 6 6 6 6 6 2 
+6 1 6 6 6 6 6 3 
 I have not taken any time off
 PRP VBP RB VBN DT NN RP
 6 6 6 6 6 6 2 
-6 6 6 1 6 6 2 
+6 6 6 6 6 1 2 
 I'm SO Sorry that I forgot about you
 NNP NNP NNP IN PRP VBD IN PRP
 6 6 6 6 6 6 6 2 
-1 6 6 1 6 6 6 2 
+1 1 6 6 6 6 6 2 
 Did you get my message about the books
 VBD PRP VB PRP$ NN IN DT NNS
 6 6 6 6 6 6 6 3 
@@ -1949,11 +1949,11 @@ VBD PRP VB PRP$ NN IN DT NNS
 I especially liked the chain saw and the flame thrower
 PRP RB VBD DT NN VBD CC DT NN NN
 6 6 6 6 6 6 6 6 6 4 
-6 6 6 6 6 6 6 6 6 2 
+6 6 6 6 1 6 6 6 1 2 
 Thought you all might be able to use this sometime
 NNP PRP DT MD VB JJ TO VB DT RB
 6 6 6 6 6 6 6 6 6 2 
-1 6 6 6 6 6 6 6 6 2 
+6 6 6 6 6 6 6 6 6 2 
 I did think of something Dad might want
 PRP VBD VB IN NN NNP MD VB
 6 6 6 6 6 6 6 2 
@@ -1961,11 +1961,11 @@ PRP VBD VB IN NN NNP MD VB
 Call mom and ask her what he wants
 NN NN CC VB PRP WP PRP VBZ
 6 6 6 6 6 6 6 2 
-6 1 6 6 1 6 6 2 
+6 6 6 6 6 6 6 2 
 You do know they are slave drivers right
 PRP VBP VB PRP VBP NN NNS RB
 6 6 6 6 6 6 1 3 
-6 6 6 6 6 1 1 2 
+6 6 6 6 6 6 6 2 
 Of course I'm sure it's no worse than my current job
 IN NN NN RB VBZ RB JJR IN PRP$ JJ NN
 6 6 6 6 6 6 6 6 6 6 4 
@@ -1973,15 +1973,15 @@ IN NN NN RB VBZ RB JJR IN PRP$ JJ NN
 Well it's about time I got started working today
 NNP VBZ IN NN PRP VBD VBD VBG NN
 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 2 
+6 6 6 1 6 6 1 6 3 
 And no I have no ideas...not even bad ones
 CC DT PRP VBP DT NN RB JJ NNS
 6 6 6 6 6 6 6 6 2 
-6 1 6 6 6 1 6 6 2 
+6 1 6 6 6 1 6 6 6 
 I have also included the detail that supports the GRMS position
 PRP VBP RB VBN DT NN WDT VBZ DT NNP NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 1 6 6 1 6 2 
+6 6 6 6 6 1 6 6 6 6 2 
 Let me know how we did
 VB PRP VB WRB PRP VBD
 6 6 6 6 6 2 
@@ -1989,15 +1989,15 @@ VB PRP VB WRB PRP VBD
 As for the master deal id as long as they are all unique what you had was fine
 IN IN DT NN NN VBD RB RB IN PRP VBP DT JJ WP PRP VBD VBD JJ
 6 6 6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 1 6 6 6 6 6 6 6 6 1 6 6 6 6 2 
+6 6 6 1 6 6 6 6 6 6 6 6 6 6 6 6 1 2 
 If you have any more questions just give me a call
 IN PRP VBP DT JJR NNS RB VBP PRP DT NN
 6 6 6 6 6 6 6 6 6 6 2 
-6 6 6 6 6 6 6 6 1 6 2 
+6 6 6 6 6 6 6 6 6 6 2 
 	 	 	 	COMMA		PERIO		QUEST		EXCLA		COLON		SPACE	
-COMMA	 		163	 		95	 		0	 		2	 		0	 		923	 	
-PERIO	 		339	 		360	 		0	 		2	 		0	 		2514	 	
-QUEST	 		45	 		77	 		10	 		2	 		0	 		562	 	
-EXCLA	 		51	 		41	 		1	 		0	 		0	 		310	 	
+COMMA	 		51	 		0	 		0	 		0	 		0	 		47	 	
+PERIO	 		0	 		330	 		27	 		3	 		0	 		7	 	
+QUEST	 		0	 		25	 		67	 		0	 		0	 		0	 	
+EXCLA	 		0	 		34	 		6	 		0	 		0	 		1	 	
 COLON	 		0	 		0	 		0	 		0	 		0	 		0	 	
-SPACE	 		3901	 	3565		81	 		27	 		0	 		28769	 	
+SPACE	 		315	 		8	 		1	 		0	 		0	 		3382	 	

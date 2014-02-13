@@ -45,8 +45,7 @@ def test(data, pos, labels, W):
 		print i
 		X = [data[i], pos[i]]
 		Y = y2int(labels[i])
-		nz_a = non_zero_a(X)
-		Y_pred = decode(X,W,nz_a)
+		Y_pred = decode(X,W)
 		Y = Y[1:-1]
 		Y_pred = Y_pred[1:-1]
 		f.write(" ".join(data[i])+ "\n")
@@ -57,10 +56,8 @@ def test(data, pos, labels, W):
 		for ii in range(len(X[0])):
 			f.write(str(Y_pred[ii])+ " ")
 		f.write("\n")
-		for ii in range(len(X[0])):
-			for j in range(len(X[0])):
-				print Y[ii]-1, Y_pred[j]-1
-				cm[Y[ii]-1,Y_pred[j]-1]+=1
+		for j in range(len(X[0])):
+			cm[Y[j]-1,Y_pred[j]-1]+=1
 		tot_tags += len(Y)
 		true_tags += np.sum(Y_pred==Y)
 	f.write ("\t \t \t ")
