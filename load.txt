@@ -1,0 +1,9 @@
+	 	 START	 	COMMA	 	PERIO	 	QUEST	 	EXCLA	 	COLON	 	SPACE	 	STOP	 	
+START	 	0		 	7488		 	82		 	0		 	0		 	575		 	61970		 	0	
+COMMA	 	0		 	864		 	580		 	116		 	36		 	7		 	26952		 	0	
+PERIO	 	0		 	39		 	92		 	18		 	1		 	5		 	461		 	56644	
+QUEST	 	0		 	0		 	0		 	0		 	0		 	0		 	0		 	10904	
+EXCLA	 	0		 	0		 	0		 	0		 	0		 	0		 	0		 	2567	
+COLON	 	0		 	43		 	24		 	4		 	0		 	9		 	929		 	0	
+SPACE	 	0		 	20121		 	56482		 	10766		 	2530		 	413		 	489770		 	0	
+STOP	 	0		 	0		 	0		 	0		 	0		 	0		 	0		 	0	

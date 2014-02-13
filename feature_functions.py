@@ -8,26 +8,35 @@ Using POS
 '''
 
 import nltk
-global num_a, num_b, J, pos_tags, a_func
+from copy import copy, deepcopy
+global num_a, num_b, J, pos_tags, punc_tags, a_func, b_func
 a_func = []
 b_func = []
-pos_tags = ["CC","CD","DT","EX","FW","IN","JJ","JJR","JJS","LS","MD","NN","NNP","NNPS","NNS","PDT","POS","PRP","PRP$","RB","RBR","RBS","RP","SYM","TO","UH","VB","VBD","VBG","VBN","VBP","VBZ","WDT","WP","WP$","WRB"]
-
+pos_tags = ["OTH", "CC","CD","DT","EX","FW","IN","JJ","JJR","JJS","LS","MD","NN","NNP","NNPS","NNS","PDT","POS","PRP","PRP$","RB","RBR","RBS","RP","SYM","TO","UH","VB","VBD","VBG","VBN","VBP","VBZ","WDT","WP","WP$","WRB"]
+punc_tags = ["START", "COMMA", "PERIOD", "QUESTION_MARK", "EXCLAMATION_POINT", "COLON",	"SPACE", "STOP"]
+possible_bigrams = [[1,2,5,6],[1,2,3,4,6],[7],[7],[7],[1,2,6],[1,2,3,4,5,6],[]  ]
 #################### b_function implementation
+def same(p): return p
 def b(n, yi_1, yi, i):
 	return b_func[n](yi_1,yi,i)
+p = 0
+for p in range(len(punc_tags)):
+	b_func.append(lambda yi_1,yi,i, p=p: yi==p)
+	b_func.append(lambda yi_1,yi,i, p=p: yi_1==p)
+	for q in possible_bigrams[p]:
+		b_func.append(lambda yi_1,yi,i, p=p, q=q: yi_1==p and yi==q)
 
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('START'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA') and yi==t2i('COMMA'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('PERIOD') and yi==t2i('STOP'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('START') and yi==t2i('COMMA'))
-b_func.append(lambda yi_1,yi,i: yi_1==t2i('START') and yi==t2i('COLON'))
-b_func.append(lambda yi_1,yi,i: yi==t2i('COMMA'))
-b_func.append(lambda yi_1,yi,i: yi==t2i('SPACE'))
-b_func.append(lambda yi_1,yi,i: yi==t2i('COLON'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('START'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('COMMA') and yi==t2i('COMMA'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('PERIOD') and yi==t2i('STOP'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('EXCLAMATION_POINT') and yi==t2i('STOP'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('QUESTION_MARK') and yi==t2i('STOP'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('START') and yi==t2i('COMMA'))
+#b_func.append(lambda yi_1,yi,i: yi_1==t2i('START') and yi==t2i('COLON'))
+#b_func.append(lambda yi_1,yi,i: yi==t2i('COMMA'))
+#b_func.append(lambda yi_1,yi,i: yi==t2i('SPACE'))
+#b_func.append(lambda yi_1,yi,i: yi==t2i('COLON'))
 
 	
 #################### a_function implementation
@@ -40,10 +49,11 @@ def a(n, X, i):
 	
 
 for p in pos_tags:
-	a_func.append(lambda x, pos, i, f: f and  pos[i]==p )
+	a_func.append(lambda x, pos, i, f, p=p: f and  pos[i]==p )
+	#print a_func[0](["re","rfv"], ["CC","CC"], 0, True)
 	for q in pos_tags:
-		a_func.append(lambda x, pos, i, f: f and  (pos[i]==p and pos[i+1]==q))
-a_func.append(lambda x, pos, i, f: f and  x[i][0].isupper())
+		a_func.append(lambda x, pos, i, f, p=p, q=q: f and  (pos[i]==p and pos[i+1]==q))
+a_func.append(lambda x, pos, i, f: i<len(x)-1 and  x[i+1][0].isupper())
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='but')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='and')
 a_func.append(lambda x, pos, i, f: f and  x[i].lower()=='or')
@@ -60,6 +70,7 @@ a_func.append(lambda x, pos, i, f: f and x[i] in ["-","--"])
 num_a =  len(a_func)
 num_b =  len(b_func)
 J = num_a*num_b
+print J
 def f(j, yi_1, yi, X, i):
 	#j = ai + bi*num_a
 	ai = j%num_a
