@@ -26,19 +26,21 @@ def collins_train(data, pos, labels, num_epochs):
 	'''
 	print "training started..."
 	while(iterations < num_epochs):
-		for i in range(20000):
+		for i in range(5000):
 			X = [data[i], pos[i]]
 			Y = y2int(labels[i]) #start and stop tags also appended
 			W = W + contrdiv_grad(X,Y,W)
-			print i , np.count_nonzero(W)
+			print i 
 		iterations = iterations +  1
 	print "training done...."
 	return W
+
 def test(data, pos, labels, W):
 	num_test = len(data)
-	print "num", num_test
 	true_tags = 0
 	tot_tags = 0
+	f = open("predictions.txt","w")
+	cm = np.zeros((m,m), dtype=int)
 	for i in range(num_test):
 		print i
 		X = [data[i], pos[i]]
@@ -47,14 +49,29 @@ def test(data, pos, labels, W):
 		Y_pred = decode(X,W,nz_a)
 		Y = Y[1:-1]
 		Y_pred = Y_pred[1:-1]
-		print data[i]
-		print pos[i]	
-		print Y
-		print Y_pred
-		for i in range(len(Y)):
-			if not (Y[i]==6 or Y[i]==2):
-				true_tags += int(Y[i]==Y_pred[i])
-				tot_tags += 1
+		f.write(" ".join(data[i])+ "\n")
+		f.write(" ".join(pos[i])+ "\n")
+		for ii in range(len(X[0])):
+			f.write(str(Y[ii])+ " ")
+		f.write("\n")
+		for ii in range(len(X[0])):
+			f.write(str(Y_pred[ii])+ " ")
+		f.write("\n")
+		for ii in range(len(X[0])):
+			for j in range(len(X[0])):
+				print Y[ii]-1, Y_pred[j]-1
+				cm[Y[ii]-1,Y_pred[j]-1]+=1
+		tot_tags += len(Y)
+		true_tags += np.sum(Y_pred==Y)
+	f.write ("\t \t \t ")
+	for i in range(1,m+1): f.write("\t"+i2t(i)[:5]+"\t"),
+	f.write ("\n")
+	for i in range(1,m+1):
+		f.write(i2t(i)[:5]+"\t \t")
+		for j in range(1,m+1):
+			f.write("\t"+str(cm[i-1][j-1])+"\t \t"),
+		f.write("\n")
+	f.close()
 	print "prediction accuracy : " , (true_tags*100.0)/tot_tags , "%"
 
 train_data = load_data('trainingSentences')
@@ -64,8 +81,11 @@ test_data = load_data('testSentences')
 test_labels = load_data('testLabels')
 test_POS = load_data('testPOS')
 
-#W = collins_train(train_data, train_POS, train_labels, 1)
-#test(test_data[1:100], test_POS[1:100], test_labels[1:100], W)
+W = collins_train(train_data, train_POS, train_labels, 1)
+np.savetxt("a.txt",W)
+print np.max(W)
+print np.min(W)
+test(test_data[1:500], test_POS[1:500], test_labels[1:500], W)
 
 #use this once before starting the training
 #def cache_POS(data, file_name ):

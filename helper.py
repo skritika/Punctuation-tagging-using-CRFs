@@ -27,7 +27,7 @@ def F(X, Y, W, nz_a):
 	return  np.sum(f_matrix(X,Y,nz_a), axis =1)
 
 def g(i,y_1,y,X,W,cur_a):
-    ret = 0
+    ret = 0.0
     nz_b =[]
     for k in range(num_b):
 		if(b(k,y_1,y,i)): nz_b.append(k)
@@ -72,7 +72,7 @@ def Z(X,W,method,nz_a):
 		return sum(a[-1,:])
 	elif(method=="beta") :
 		b = beta(X, W, nz_a)
-		return np.dot(np.exp(g_vector(1,0,X,W,"beta")), b[:,1])
+		return np.dot(np.exp(g_vector(1,0,X,W,"beta",nz_a[1])), b[:,1])
 	
 def expectation_F(X,W):
 	F = np.zeros(J, dtype=float)
@@ -120,8 +120,8 @@ def collins_grad(X,Y,W):
 def contrdiv_grad(X,Y,W):
 	nz_a = non_zero_a(X)
 	Y_new = gibbs(X,Y,W,1,nz_a)
-	
-	return (F(X, Y, W,nz_a) - F(X, Y_new, W,nz_a))
+	#print "alp" , Z(X,W,"alpha",nz_a), "bet", Z(X,W,"beta",nz_a)
+	return (F(X, Y, W,nz_a) - F(X, Y_new, W, nz_a))
 
 def decode(X,W,nz_a):
 	n = len(X[0])
@@ -133,14 +133,16 @@ def decode(X,W,nz_a):
 		U[1,v] = g(1,t2i("START"),v,X,W,nz_a[1])
 	for k in range(2,n+1):
 		for v in range(m+2):
-			U[k,v] = np.max(U[k-1,:]+g_vector(k,v,X,W,"alpha",nz_a[k]))
+			U[k,v] = np.max(U[k-1,:] + g_vector(k,v,X,W,"alpha",nz_a[k]))
 	## finding optimal sequence
 	y_hat[n] = 	argmax(U[n,:])
 	for i in range(n-1,0,-1):
-		y_hat[i] = argmax(U[i,:]+g_vector(i+1,y_hat[i+1],X,W,"alpha",nz_a[k]))
+		y_hat[i] = argmax(U[i,:] + g_vector(i+1,y_hat[i+1],X,W,"alpha",nz_a[i+1]))
 	return y_hat
 
 def argmax(v):
+	if(v[0]==v[1] and v[1]==v[2]):
+		print "same"
 	return np.argmax(v[1:-1])+1
 	
 def y2int(Y): #start and stop tags appended
