@@ -64,8 +64,6 @@ a_func.append(lambda x, pos, i, f: i==len(x)+1 and x[0].lower() in ['were','have
 a_func.append(lambda x, pos, i, f: f and i==0 and pos[0]=="RB")
 a_func.append(lambda x, pos, i, f: f and x[i] in ["-","--"])
 
-
-
 #############
 num_a =  len(a_func)
 num_b =  len(b_func)

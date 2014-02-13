@@ -1,5 +1,4 @@
 	 	 	START	 	 	COMMA	 	 	PERIO	 	 	QUEST	 	 	EXCLA	 	 	COLON	 	 	SPACE	 	 	STOP	 	 	
-OTH	 		 	 0		 	 6		 	 0		 	 0		 	 0		 	 0		 	 856		 	 0	
 CC	 		 	 0		 	 204		 	 0		 	 0		 	 0		 	 0		 	 14492		 	 0	
 CD	 		 	 0		 	 64		 	 0		 	 0		 	 0		 	 2		 	 1573		 	 0	
 DT	 		 	 0		 	 400		 	 2		 	 0		 	 0		 	 12		 	 51390		 	 0	
